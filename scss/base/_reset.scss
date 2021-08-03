@@ -1,0 +1,19 @@
+body{
+    box-sizing: inherit;
+	color: inherit;
+}
+ol, ul {
+	list-style: none;
+}
+html{
+	color: $colorPrimary ;
+    font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.4285;
+	font-size: 1.4rem;
+	box-sizing: border-box;
+}
