@@ -1,0 +1,7 @@
+@mixin hover {
+    &:hover{
+        color: #ff6060;
+        transition: 0.6s;
+
+    } 
+}
