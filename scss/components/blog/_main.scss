@@ -67,12 +67,13 @@
                 font-style: italic;
                 @include hover;
                 i{
+                    color: #000;
                     margin-right: 4px;
                 }
             }
         }
         .item__desc{
-            font-style: italic;
+            // font-style: italic;
             margin: 16px 0;
             p{
                 line-height: 2;
@@ -144,8 +145,8 @@
         position: relative;
     }
     .item__body .item__date{
-        min-width: 42px;
-        height: 49px;
+        min-width: 58px;
+        height: 65px;
         font-size: 1.4rem;
         margin-right: 12px;
     
@@ -156,8 +157,13 @@
     .item__body .item__content .item__contact{
         margin: 16px 0;
     }
+    .item__body .item__date {
+        font-size: 14px;
+        line-height: 16px;
+    }
     .item__body .item__date strong {
         font-size: 2rem;
+        line-height: 23px
     }
     .item__body .item__content .item__title h2 {
         
@@ -187,8 +193,8 @@
     .item__content{
         min-height:280px;
     }
-    .item__body .item__content .item__desc,.item__btn{
-        transform: translateX(-50px);
+    .item__body .item__content .item__desc,.item__body .item__content .item__btn{
+        margin-left: -65px;
 
     }
     .item__body .item__content .item__desc p{
