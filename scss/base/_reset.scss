@@ -1,11 +1,12 @@
-body{
-    box-sizing: border-box;
+*{
+    box-sizing: inherit;
 	color: inherit;
 	margin: 0;
 	padding: 0;
 	font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.4285;
 	font-size: 1.4rem;
+
 }
 ol, ul {
 	list-style: none;
@@ -14,7 +15,7 @@ a{
 	text-decoration: none;
 }
 html{
-	color: $colorPrimary ;
     font-size: 62.5%;
+	color: $colorPrimary ;
 	box-sizing: border-box;
 }

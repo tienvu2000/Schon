@@ -18,7 +18,7 @@
     color: #383838;
     position: absolute;
     width: 100%;
-    top: 25%;
+    top: 40%;
     text-align: center;
     text-transform: uppercase;
     h1{
@@ -31,9 +31,10 @@
     background: #eeeeee;
     height: 44px;
     width: 100%;
-    line-height: 44px;
+    display:flex;
 }
 .header__nav-items{
+        line-height: 44px;
         display: flex;
         justify-content: space-between;
         align-items: center;
