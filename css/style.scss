@@ -1,3 +1,4 @@
+//base
 @import '../scss/base/colors';
 @import '../scss/base/helper';
 @import '../scss/base/mixins';
@@ -6,3 +7,7 @@
 @import '../scss/base/variables';
 @import '../scss/layout/header';
 @import '../scss/layout/footer';
+@import '../scss/components/blog/headerblog';
+@import '../scss/components/products/top';
+@import '../scss/components/products/_sidebar';
+@import '../scss/components/products/right';

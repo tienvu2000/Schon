@@ -1,0 +1,52 @@
+.top{
+    background-image:url('../assets/images/products/img100.jpg');
+    background-repeat: cover;
+    width: 100%;
+    margin: 0px 0px 4px;
+    min-height: 207px;
+    background-position: 50% 50%;
+    &__body{
+        width: 100%;
+        text-align: center;
+        padding: 65px 0 14px;
+        padding-left: 36px;
+        padding-right: 15px;
+        h1{
+            font-size: 44px;
+            line-height: 46px;
+            font-weight: 700;
+            font-family: "Montserrat", sans-serif;
+            margin: 0 0 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #383838;
+        }
+    }
+    &__body--path{
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 200;
+        overflow: hidden;
+        color: #383838;
+        margin: 0 0 20px;
+        ul{
+            margin: 0;
+            padding-left: 0px;
+            li{
+                margin: 0 10px 0 0;
+                display: inline-block;
+                vertical-align: middle;
+                a{
+                    color: #383838;
+                    &:hover{
+                        color:#ff6060;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:767px) {
+        margin: 0px 0px 16px;
+        width: 100%;
+    }
+}
