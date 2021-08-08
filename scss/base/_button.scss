@@ -1,0 +1,35 @@
+input {
+    border: 0;
+    width: 100%;
+    outline: none;
+    color: #909090;
+    margin: 0 0 11px;
+    padding: 9px 22px;
+    background: #f0f0f0;
+    border-radius: 30px;
+    line-height: 1;
+    box-sizing: border-box;
+    font: 300 14px/20px "Source Sans Pro", sans-serif
+}
+
+#check1 {
+    float: left;
+
+}
+
+.btn {
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 8px 22px;
+    background: #808080;
+    border-radius: 18px;
+    vertical-align: top;
+    display: inline-block;
+    font: 300 14px/20px "Source Sans Pro", sans-serif;
+
+    &:hover {
+       background-color: $hover-red;
+       transition: all 0.4s;
+    }
+}

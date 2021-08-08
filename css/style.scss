@@ -4,5 +4,9 @@
 @import '../scss/base/reset';
 @import '../scss/base/typography';
 @import '../scss/base/variables';
-@import '../scss/layout/header';
+@import "../scss/base/button";
+
+@import "../scss/layout/header";
+@import "../scss/layout/header-click";
+@import "../scss/layout/main";
 @import '../scss/layout/footer';
