@@ -56,9 +56,8 @@
         left: 0;
         right: 0;
         top: 140%;
-        opacity: 0;
+        
         background: #fff;
-        visibility: hidden;
         position: absolute;
         border: 1px solid #d8d8d8;
     }
@@ -121,6 +120,9 @@
             color: #868686;
         }
     }
+    &__b2:hover &__hover{
+        opacity: 1;
+    }
     &__star{
         left: 20px;
         margin: 0;
@@ -147,10 +149,11 @@
         display: table;
         font-size: 17px;
         background: #fff;
-        display: none;
+        opacity: 0;
         position: absolute;
         text-align: center;
         border: 1px solid #eee;
+        border-right: none;
         padding: 0;
         li{
             border-right: 1px solid #eee;
