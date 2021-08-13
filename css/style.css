@@ -421,6 +421,7 @@ h2 {
 .search form {
   position: relative;
   width: 770px;
+  height: 60px;
   margin: 0 auto;
   border-left: 1px solid #bdbdbd;
 }
@@ -442,7 +443,7 @@ h2 {
   outline: none;
   color: #9d9d9d;
   background: #f8f8f8;
-  padding: 15px 22px;
+  padding: 12.5px 22px;
   font-size: 2.5rem;
   font-weight: 300;
 }
@@ -465,7 +466,7 @@ h2 {
   transition: 0.2s;
 }
 
-.search form fieldset button {
+.search__btn {
   position: absolute;
   top: 19px;
   right: 5px;
@@ -478,7 +479,7 @@ h2 {
   background: #f8f8f8;
 }
 
-.search form fieldset button:hover {
+.search__btn:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #ff6060;
