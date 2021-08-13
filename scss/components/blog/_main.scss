@@ -1,0 +1,205 @@
+.main{
+}
+.main__item{
+    margin-bottom: 20px;
+    .item__head{
+        position: relative;
+        .item__img{
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+        .item__social{
+            position: absolute;
+            top: 14%;
+            right: 5%;
+            a{
+                color: #fff;
+                margin: 0px 4px;
+                font-size: 1.6rem;
+                font-weight: 600;
+                @include hover;
+                i{
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+}
+.item__body{
+    display: flex;
+    .item__date{
+        min-width: 62px;
+        height: 63px;
+        color: #fff;
+        background-color: #919191;
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 8px;
+        margin-right: 50px;
+        strong{
+            font-size: 3rem;
+            line-height:1.1;
+        }
+    }
+    .item__content{
+        margin: 32px 0;
+        .item__title{
+
+            h2{
+                letter-spacing: 1px;
+                a{
+                    font-size: 3rem;
+                    @include hover;
+                    color: #494949;
+                }
+            }
+        }
+        .item__contact{
+            display: inline-flex;
+            transform: translateY(-10px);
+            margin: 24px 0 16px 0;
+            a{
+                margin-right: 32px;
+                color: $colorPrimary;
+                font-style: italic;
+                @include hover;
+                i{
+                    color: #000;
+                    margin-right: 4px;
+                }
+            }
+        }
+        .item__desc{
+            // font-style: italic;
+            margin: 16px 0;
+            p{
+                line-height: 2;
+            }
+
+        }
+        .item__btn{
+            margin: 32px 0;
+            a{
+                color: #494949;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                @include hover;
+                
+            }
+        }
+    }
+}
+.footer__blog{
+    .grid{
+        display: flex;
+        justify-content: space-between;
+        a{
+            border: 1px solid #000;
+            padding: 5px 16px;
+            font-size:1.8rem;
+            font-weight: 700;
+            color: #494949;
+            &:hover{
+                border-color: #ff6060;
+                background-color: #ff6060;
+                color: #fff;
+                transition: 0.6s;
+            }
+        }
+    }
+}
+@media screen and (max-width:767px){
+    .grid{
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .header__img{
+        img{
+            min-height: 105px;
+            object-fit: cover;
+        }
+
+    }
+    .header__title{
+        h1{
+            font-size: 2rem;
+        }
+    }
+    .header__link-action{
+        .header__list-bar{
+            i{
+                font-size: 2rem;
+            }
+        }
+        a{
+            span{
+                display:none;
+            }
+        }
+    }
+    .main__item{
+        position: relative;
+    }
+    .item__body .item__date{
+        min-width: 58px;
+        height: 65px;
+        font-size: 1.4rem;
+        margin-right: 12px;
+    
+    }
+    .item__body .item__content{
+        margin: 16px 0;
+    }
+    .item__body .item__content .item__contact{
+        margin: 16px 0;
+    }
+    .item__body .item__date {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .item__body .item__date strong {
+        font-size: 2rem;
+        line-height: 23px
+    }
+    .item__body .item__content .item__title h2 {
+        
+        letter-spacing: 0;
+    }
+    .item__body .item__content .item__title h2 a{
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.6rem;
+        line-height: 20px;
+    }
+    .item__body .item__content .item__desc{
+        margin: 0;
+    }
+    .item__contact{
+        flex-wrap: wrap;
+    }
+    .item__sub-date,.item__list,.item__comments{
+        width: calc(100% / 2);
+    }
+    .item__sub-date,.item__list{
+        margin: 8px 0;
+    }
+    .item__body .item__content .item__contact a{
+        margin: 0;
+    }
+    .item__content{
+        min-height:280px;
+    }
+    .item__body .item__content .item__desc,.item__body .item__content .item__btn{
+        margin-left: -65px;
+
+    }
+    .item__body .item__content .item__desc p{
+        margin: 0;
+    }
+
+        
+}
