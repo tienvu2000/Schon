@@ -12,3 +12,12 @@
     display: flex;
     flex-wrap: wrap;
 }
+.social {
+    display: flex;
+    li {
+        margin: 0 6px 2px 2px;
+    }
+    a {
+        font-size: 14px;
+    }
+}

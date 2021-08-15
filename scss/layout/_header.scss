@@ -12,10 +12,11 @@ $margin-left: 20px;
     }
     &__wrap {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        position: relative;
         padding: 21px 0;
+        position: relative;
     }
 
     &__logo {
@@ -28,6 +29,7 @@ $margin-left: 20px;
         margin-left: auto;
     }
     &__menu {
+        background-color: white;
         display: flex;
     }
 
@@ -96,13 +98,59 @@ $margin-left: 20px;
 
     @media screen and (max-width: 768px) {
         &__nav {
-            display: none;
+            opacity: 0;
+            visibility: hidden;
+            // background-color: rebeccapurple;
+            width: 100%;
+            position: absolute;
+            top: 73px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        &__menu {
+            flex-direction: column;
+            border-top: 1px solid #ccc;
+            i {
+                display: inline;
+            }
+        }
+
+        &__list{
+            margin-left: 0;
+            a {
+                display: block;
+                width: 100%;
+                padding: 15px;
+                box-sizing: border-box;
+                letter-spacing: 1px;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+
+        &__drop {
+            opacity: 0;
+            visibility: hidden;
+            position: relative;
+            padding-top: 0;
+            margin-top: -10px;
+            width: 100%;
+            overflow: hidden;
+            max-height: 0;
+            ul li {
+                padding: 0;
+                border: none;
+            }
+            a {
+                padding: 0 15px;
+                box-sizing: border-box;
+                border: none;
+            }
         }
     }
 }
 
 .page {
-    // position: relative;
     position: static;
     margin-left: $margin-left;
     & a:hover {
@@ -156,7 +204,8 @@ $margin-left: 20px;
 
     &__wrap {
         display: flex;
-        background-color: aqua;
+        // background-color: aqua;
+        background-color: white;
         padding: 60px 72px;
         div {
             flex: 1;
@@ -172,6 +221,9 @@ $margin-left: 20px;
         position: relative;
         pointer-events: none;
         font: 16px/20px "Montserrat", sans-serif;
+        i {
+            display: none;
+        }
     }
     &__title a::after {
         content: "";
@@ -191,6 +243,76 @@ $margin-left: 20px;
         width: 245px;
         img {
             width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &{
+            margin-left: 0;
+            a {
+                display: block;
+                width: 100%;
+                padding: 15px;
+                box-sizing: border-box;
+                letter-spacing: 1px;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+        &__wrap {
+            padding: 9px 25px 0 25px;
+            flex-direction: column;
+        }
+        &__drop {
+            opacity: 0;
+            visibility: hidden;
+            max-height:0px;
+            position: relative;
+            top: 0;
+            padding-top: 0;
+            margin-top: -10px;
+            width: 100%;
+            overflow: hidden;
+            ul li {
+                padding: 0;
+                border: none;
+            }
+            a {
+                padding: 0 15px;
+                box-sizing: border-box;
+                border: none;
+            }
+        }
+
+        &__2 {
+            div {
+                margin: 0;
+            }
+        }
+        &__title {
+            margin: 0;
+            margin-bottom: 9px;
+            padding: 0;
+            a {
+                margin: 0;
+                padding: 0;
+                font-size: 14px;
+                line-height: 16px;
+                pointer-events: auto;
+                &::after {
+                    display: none;
+                }
+            }
+
+            i {
+                display: inline;
+            }
+        }
+        &__detail {
+            max-height: 0px;
+            overflow: hidden;
+        }
+        &__img {
+            display: none;
         }
     }
 }
@@ -214,12 +336,15 @@ $margin-left: 20px;
     left: 12px;
 }
 
-.icon-bar {
+.bar-menu {
     display: none;
 }
 
 @media screen and (max-width: 768px) {
-    .icon-bar {
+    .bar-menu {
         display: inline;
     }
+}
+.selec {
+    display: none !important;
 }

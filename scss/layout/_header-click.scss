@@ -59,76 +59,46 @@
         box-sizing: border-box;
     }
 }
-
-.open {
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.5s;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-}
-
-.open-1 {
-    opacity: 1 !important;
-    visibility: visible !important;
-    transition: 0.5s;
-    z-index: 10;
-}
-
-.s-open {
-    max-width: 1000px !important;
-}
-.close {
-    display: none;
-}
-
-.dark {
-    position: fixed;
-    opacity: 0;
-    visibility: hidden;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.selec {
-    // opacity: 0;
-    display: block;
-    width: 25px;
-    height: 23px;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    background: red;
-    position: absolute;
-}
 ////////////////////////////////////////////////////////////////////
 
 .popular {
     position: relative;
     &::after {
-        content: "";
-        display: block;
+        // content: "";
+        // display: block;
+        // opacity: 0;
+        // width: 25px;
+        // height: 23px;
+        // clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        // background: red;
+        // position: absolute;
+
+        width: 0;
+        top: 100%;
+        left: 50%;
+        height: 0;
         opacity: 0;
-        width: 25px;
-        height: 23px;
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        background: red;
+        content: " ";
+        visibility: hidden;
+        margin-left: -13px;
         position: absolute;
+        pointer-events: none;
+        border: solid transparent;
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: red;
+        border-width: 13px;
     }
     &__heart {
         opacity: 0;
+        visibility: hidden;
         background-color: white;
         // background-color: royalblue;
         box-sizing: border-box;
         padding: 54px 40px;
-        transform: translateX(-250px);
         width: 380px;
         position: absolute;
-        top: 52px;
+        top: 168%;
+        right: -49px;
     }
     &__list {
         border-bottom: 2px solid $search-header;
@@ -183,25 +153,39 @@
             transition: all 0.5s;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        &__heart {
+            padding: 32px 10px;
+            right: -96px;
+            width: 360px;
+        }
+    }
 }
 
 .bag {
     position: relative;
     &__heart {
         opacity: 0;
+        visibility: hidden;
         background-color: white;
         // background-color: royalblue;
         box-sizing: border-box;
         padding: 54px 40px;
-        transform: translateX(-250px);
         width: 380px;
         position: absolute;
-        top: 52px;
+        top: 168%;
+        right: -49px;
     }
 
     &__sub {
         padding: 20px 0;
         border-bottom: 2px solid $search-header;
+        display: flex;
+        justify-content: space-between;
+        span {
+            color: $header-page;
+        }
     }
 
     .img {
@@ -220,6 +204,14 @@
         &:hover {
             color: $menu-color;
             transition: all 0.5s;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__heart {
+            padding: 32px 10px;
+            right: -58px;
+            width: 360px;
         }
     }
 }
@@ -330,6 +322,14 @@
             font: 900 14px/20px "Montserrat", sans-serif;
         }
     }
+    @media screen and (max-width:768px) {
+        & {
+            width: 270px;
+        }
+        &__ctn {
+            padding: 0 10px;
+        }
+    }
 }
 .box {
     position: relative;
@@ -338,3 +338,66 @@
 .help {
     margin-left: auto;
 }
+
+////////////////////////////////////@
+
+.open {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.open-1 {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.s-open {
+    max-width: 1000px !important;
+}
+
+.h-open {
+    max-height: 999px;
+    opacity: 1;
+    visibility: visible;
+}
+.close {
+    display: none;
+}
+
+.dark {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.zindex {
+    z-index: 5;
+}
+
+.selec {
+    // opacity: 0;
+    display: block;
+    width: 25px;
+    height: 23px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: red;
+    position: absolute;
+}
+// @media screen and (max-width: 768px) {
+//     body.is-fixed {
+//         overflow: hidden;
+//         position: relative;
+//     }
+// }

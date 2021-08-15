@@ -26,7 +26,7 @@
     <body>
         <!--BEGIN HEADER-->
         <header class="header">
-            <div /*class="grid">
+            <div  class="grid">
                 <div class="header__wrap">
                     <div class="header__logo">
                         <a href="#">
@@ -36,7 +36,7 @@
                     <nav class="header__nav">
                         <ul class="header__menu">
                             <li class="header__list">
-                                <a ref="">HOME
+                                <a class="drop-link" ref="">HOME
                                     <i class="fas fa-angle-down"></i>
                                 </a>
                                 <div class="header__drop">
@@ -75,7 +75,7 @@
                                 </div>
                             </li>
                             <li class="header__list">
-                                <a ref=""
+                                <a class="drop-link" ref=""
                                     >PRODUCTS
                                     <i class="fas fa-angle-down"></i>
                                 </a>
@@ -106,7 +106,7 @@
                                 </div>
                             </li>
                             <li class="header__list">
-                                <a ref="">BLOG <i class="fas fa-angle-down"></i></a>
+                                <a class="drop-link" ref="">BLOG <i class="fas fa-angle-down"></i></a>
                                 <div class="header__drop">
                                     <ul>
                                         <li>
@@ -130,7 +130,7 @@
                             <li class="page">
                                 <div class="page__hover">
 
-                                    <a ref="">
+                                    <a class="drop-link" ref="">
                                         PAGE
                                         <i class="fas fa-angle-down"></i>
                                     </a>
@@ -138,9 +138,11 @@
                                         <div class="page__wrap">
                                             <div>
                                                 <strong class="page__title">
-                                                    <a href="#">SHOP PAGES</a>
+                                                    <a href="#">SHOP PAGES 
+                                                        <i class="fas fa-angle-down"></i>
+                                                    </a>
                                                 </strong>
-                                                <div>
+                                                <div class="page__detail">
                                                     <ul>
                                                         <li><a href="#">Product Grid View
                                                         </a></li>
@@ -174,19 +176,20 @@
                                                 <div>
                                                     <strong class="page__title">
                                                         <a href="#">404 PAGES
+                                                            <i class="fas fa-angle-down"></i>
                                                         </a>
                                                     </strong>
-                                                    <div>
+                                                    <div class="page__detail">
                                                         <ul>
                                                             <li> <a href="#"> 404 Page</a>
                                                             </li>
-                                                            <li><a href="#"></a>404 Page2</a>
+                                                            <li><a href="#">404 Page2</a>
                                                             </li>
-                                                            <li><a href="#"></a>404 Page3</a>
+                                                            <li><a href="#">404 Page3</a>
                                                             </li>
-                                                            <li><a href="#"></a>404 Page4</a>
+                                                            <li><a href="#">404 Page4</a>
                                                             </li>
-                                                            <li><a href="#"></a>404 Page5</a>
+                                                            <li><a href="#">404 Page5</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -194,9 +197,10 @@
                                                 <div>
                                                     <strong class="page__title">
                                                         <a href="#">COMING SOON
+                                                            <i class="fas fa-angle-down"></i>
                                                         </a>
                                                     </strong>
-                                                    <div>
+                                                    <div class="page__detail">
                                                         <ul>
                                                             <li><a href="#">Coming Soon
                                                             </a></li>
@@ -208,9 +212,10 @@
                                             <div>
                                                 <strong class="page__title">
                                                     <a href="#">KITCHEN FURNITURE
+                                                        <i class="fas fa-angle-down"></i>
                                                     </a>
                                                 </strong>
-                                                <div>
+                                                <div class="page__detail">
                                                     <ul>
                                                         <li><a href="#">Kitchen Taps
                                                         </a></li>
@@ -248,7 +253,7 @@
                                 <a ref="">ABOUT</a>
                             </li>
                             <li class="header__list">
-                                <a ref="">CONTACT
+                                <a class="drop-link" ref="">CONTACT
                                     <i class="fas fa-angle-down"></i></a>
                                 <div class="header__drop">
                                     <ul>
@@ -261,11 +266,16 @@
                                     </ul>
                                 </div>
                             </li>
+                            <!---->
+
+                            <!---->
+
+
                         </ul>
                     </nav>
                     <div class="header__icon">
                             <ul>
-                                <li class="icon-bar">
+                                <li class="bar-menu">
                                     <a href="#">
                                         <i class="fas fa-bars"  ></i>
                                     </a>
@@ -282,39 +292,41 @@
                                         </i>
                                     </a>              
                                     <span class="dark"></span>              
-                                    <span class="selec"></span>             
-                                    <div class="popular__heart">
-                                        <div class="popular__list">
-                                            <div class="popular__row">
-                                                <a href="#" class="img"><img src="./assets/images/products/img01.jpg" alt="image" class="img-responsive"></a>
-                                                <div>
-                                                    <span><a href="#">Marvelous Modern 3 Seater</a></span>
-                                                    <span class="popular__price"><i class="fas fa-euro-sign"></i> 599,00</span>
+                                    <span class="selec"></span>
+                                    <div class="s-wrap">
+                                        <div class="popular__heart">
+                                            <div class="popular__list">
+                                                <div class="popular__row">
+                                                    <a href="#" class="img"><img src="./assets/images/products/img01.jpg" alt="image" class="img-responsive"></a>
+                                                    <div>
+                                                        <span><a href="#">Marvelous Modern 3 Seater</a></span>
+                                                        <span class="popular__price"><i class="fas fa-euro-sign"></i> 599,00</span>
+                                                    </div>
+                                                    <i class="fas fa-times"></i>
                                                 </div>
-                                                <i class="fas fa-times"></i>
+                                                <div class="popular__row">
+                                                    <a href="#" class="img"><img src="./assets/images/products/img01.jpg" alt="image" class="img-responsive"></a>
+                                                    <div>
+                                                        <span><a href="#">Marvelous Modern 3 Seater</a></span>
+                                                        <span class="popular__price"><i class="fas fa-euro-sign"></i> 599,00</span>
+                                                    </div>
+                                                    <i class="fas fa-times"></i>
+                                                </div>
+                                                <div class="popular__row">
+                                                    <a href="#" class="img"><img src="./assets/images/products/img01.jpg" alt="image" class="img-responsive"></a>
+                                                    <div>
+                                                        <span><a href="#">Marvelous Modern 3 Seater</a></span>
+                                                        <span class="popular__price"><i class="fas fa-euro-sign"></i> 599,00</span>
+                                                    </div>
+                                                    <i class="fas fa-times"></i>
+                                                </div>
                                             </div>
-                                            <div class="popular__row">
-                                                <a href="#" class="img"><img src="./assets/images/products/img01.jpg" alt="image" class="img-responsive"></a>
-                                                <div>
-                                                    <span><a href="#">Marvelous Modern 3 Seater</a></span>
-                                                    <span class="popular__price"><i class="fas fa-euro-sign"></i> 599,00</span>
-                                                </div>
-                                                <i class="fas fa-times"></i>
-                                            </div>
-                                            <div class="popular__row">
-                                                <a href="#" class="img"><img src="./assets/images/products/img01.jpg" alt="image" class="img-responsive"></a>
-                                                <div>
-                                                    <span><a href="#">Marvelous Modern 3 Seater</a></span>
-                                                    <span class="popular__price"><i class="fas fa-euro-sign"></i> 599,00</span>
-                                                </div>
-                                                <i class="fas fa-times"></i>
+                                            <div class="popular__total">
+                                                <a href="#">Add them all</a>
+                                                <a class="popular__buttom"href="#">ADD TO CARD</a>
                                             </div>
                                         </div>
-                                        <div class="popular__total">
-                                            <a  href="">Add them all</a>
-                                            <a class="popular__buttom" href="">ADD TO CARD</a>
-                                        </div>
-                                    </div>
+                                    </div>    
                                 </li>
                                 <li class="bag">
                                     <a href="#">
@@ -323,47 +335,49 @@
                                         <span class="num">3</span>
                                         </i>
                                     </a>
-                                    <span class="selec"></span>          
-                                    <div class="bag__heart">
-                                        <div class="popular__list">
-                                            <div class="popular__row">
-                                                <a href="#" class="img"><img src="./assets/images/products/img01.jpg" alt="image" class="img-responsive"></a>
-                                                <div>
-                                                    <span><a href="#">Marvelous Modern 3 Seater</a></span>
-                                                    <span class="popular__price"><i class="fas fa-euro-sign"></i> 599,00</span>
+                                    <span class="selec"></span> 
+                                    <div class="s-wrap">
+                                        <div class="bag__heart">
+                                            <div class="popular__list">
+                                                <div class="popular__row">
+                                                    <a href="#" class="img"><img src="./assets/images/products/img01.jpg" alt="image" class="img-responsive"></a>
+                                                    <div>
+                                                        <span><a href="#">Marvelous Modern 3 Seater</a></span>
+                                                        <span class="popular__price"><i class="fas fa-euro-sign"></i> 599,00</span>
+                                                    </div>
+                                                    <i class="fas fa-times"></i>
                                                 </div>
-                                                <i class="fas fa-times"></i>
+                                                <div class="popular__row">
+                                                    <a href="#" class="img"><img src="./assets/images/products/img01.jpg" alt="image" class="img-responsive"></a>
+                                                    <div>
+                                                        <span><a href="#">Marvelous Modern 3 Seater</a></span>
+                                                        <span class="popular__price"><i class="fas fa-euro-sign"></i> 599,00</span>
+                                                    </div>
+                                                    <i class="fas fa-times"></i>
+                                                </div>
+                                                <div class="popular__row">
+                                                    <a href="#" class="img"><img src="./assets/images/products/img01.jpg" alt="image" class="img-responsive"></a>
+                                                    <div>
+                                                        <span><a href="#">Marvelous Modern 3 Seater</a></span>
+                                                        <span class="popular__price"><i class="fas fa-euro-sign"></i> 599,00</span>
+                                                    </div>
+                                                    <i class="fas fa-times"></i>
+                                                </div>
                                             </div>
-                                            <div class="popular__row">
-                                                <a href="#" class="img"><img src="./assets/images/products/img01.jpg" alt="image" class="img-responsive"></a>
-                                                <div>
-                                                    <span><a href="#">Marvelous Modern 3 Seater</a></span>
-                                                    <span class="popular__price"><i class="fas fa-euro-sign"></i> 599,00</span>
-                                                </div>
-                                                <i class="fas fa-times"></i>
+                                            <div class="bag__sub">
+                                                <span>
+                                                    <a href="#">Sub total</a>
+                                                </span>
+                                                <span>
+                                                    <i class="fas fa-euro-sign"></i> 599,00
+                                                </span>
                                             </div>
-                                            <div class="popular__row">
-                                                <a href="#" class="img"><img src="./assets/images/products/img01.jpg" alt="image" class="img-responsive"></a>
-                                                <div>
-                                                    <span><a href="#">Marvelous Modern 3 Seater</a></span>
-                                                    <span class="popular__price"><i class="fas fa-euro-sign"></i> 599,00</span>
-                                                </div>
-                                                <i class="fas fa-times"></i>
+                                            <div class="popular__total">
+                                                <a class="popular__buttom"href="#">VIEW CARD</a>
+                                                <a class="popular__buttom"href="#">CHECKOUT</a>
                                             </div>
                                         </div>
-                                        <div class="bag__sub">
-                                            <span>
-                                                <a href="">Sub total</a>
-                                            </span>
-                                            <span>
-                                                <i class="fas fa-euro-sign"></i> 599,00
-                                            </span>
-                                        </div>
-                                        <div class="popular__total">
-                                            <a class="popular__buttom" href="">VIEW CARD</a>
-                                            <a class="popular__buttom" href="">CHECKOUT</a>
-                                        </div>
-                                    </div>
+                                    </div>  
                                 </li>
                                 <li class="signin-click">
                                     <a   href="#">
@@ -443,12 +457,96 @@
                         </div>
                     </div>
                 </div>
-                    
                 <i class="fas fa-times"></i>
             </div>
             <span class="dark"></span>
         </header>
         <!--END HEADER-->
     </body>
+
+    <footer class="footer">
+            <div class="footer__top">
+                <div class="grid">
+                    <div class="footer__wrap">
+                        <div class="footer__card">
+                            <div>
+                                <div class="footer__logo">
+                                    <img src="./assets/images/logo--footer.png" alt="logo">
+                                </div>
+                                <div class="footer__detail">
+                                    <p>Exercitation ullamco laboris nisi ut aliquip ex commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
+                            </div>
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__card">
+                            <h3>
+                                Twitter
+                            </h3>
+                            <div class="footer__2">
+                                <i class="fab fa-twitter"></i>
+                                <p>
+                                    Laboris nisi ut <a href="#">#schön</a> aliquip econse-
+                                    quat. <a href="">https://t.co/vreNJ9nEDt</a>
+                                </p>
+                            </div>
+                            <div class="footer__2">
+                                <i class="fab fa-twitter"></i>
+                                <p>
+                                    Ficia deserunt mollit anim id est labo-
+                                    rum. incididunt ut labore et dolore
+                                    <a href="">https://t.co/vreNJ9nEDt
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer__card">
+                            <h3>
+                                Product Tags
+                            </h3>
+                            <ul class="footer__list">
+                                <li> <a href=""> Sofas   </a> </li>
+                                <li><a href=""> Armchairs </a> </li>
+                                <li><a href=""> Living </a> </li>
+                                <li><a href=""> Bedroom </a> </li>
+                                <li><a href=""> Lighting </a> </li>
+                                <li><a href=""> Tables </a> </li>
+                                <li><a href=""> Pouf </a> </li>
+                                <li><a href=""> Wood </a> </li>
+                                <li><a href=""> Office </a> </li>
+                                <li><a href=""> Outdoor </a> </li>
+                                <li><a href=""> Kitchen </a> </li>
+                                <li><a href=""> Stools </a> </li>
+                                <li><a href=""> Footstools </a> </li>
+                                <li><a href=""> Desks </a> </li>
+                            </ul>
+                        </div>
+                        <div  class="footer__card footer__last">
+                            <h3>Information</h3>
+                            <ul>
+                                <li><i class="fas fa-map-marker-alt"></i><address>Connaugt Road Central Suite 18B, 148 <br>New Yankee</address></li>
+                                <li><a href="">+1 (555) 333 22 11</a><i class="fas fa-phone-alt"></i></li>
+                                <li><a href="">info@schon.chair</a><i class="far fa-envelope"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="grid">  
+                    <div class="footer__bottom">
+                        <span>© <a href=""> schön.</a> - All rights Reserved</span>
+                        <img src="./assets/images/bank-card.png" alt="">
+                    </div>            
+                </div>
+            </div>
+    </footer>
     <script src="./js/header-js.js"></script>
 </html>
