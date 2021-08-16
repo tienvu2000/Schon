@@ -1,0 +1,124 @@
+.banner{
+    &__row{
+        display: flex;
+        justify-content:space-between;
+    }
+    padding-top: 23px;
+    &__item{
+        // width: calc((100% / 3) - 20px );
+        position: relative; 
+    }
+    &__item-img{
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    &__item-half{
+        position: relative;
+        margin-bottom: 24px;
+    }
+    &__middle{
+        display: flex;
+        flex-direction: column;
+    }
+    &__item-content{
+        width:100%;
+        position: absolute;
+        padding: 41px 39px;
+        top: 0;
+    }
+    &__item-title{
+        margin-bottom:40px;
+        h2{
+            margin: 0 0 3px;
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: 2.6px;
+            font-size: 22px;
+            line-height: 28px;
+        }
+    }
+    &__item-price{
+        p{
+            color: #9f9f9f;
+            letter-spacing: -1.5px;
+            font-size: 17px;
+            line-height: 23px;
+            font-family: "Montserrat", sans-serif;
+        }
+    }
+    &__item-price-last{
+        margin-top: -36px;
+        padding: 12px 0 26px;
+    }
+    &__item-btn{
+        a{
+            color: #878787;
+            font-size: 14px;
+            margin: 40px 0 0;
+            line-height: 16px;
+            text-decoration: none;
+            letter-spacing: -0.8px;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            @include hover;
+            i{
+                text-align: center;
+                border-radius: 100%;
+                border: 1px solid #878787;
+                width: 24px;
+                height: 24px;
+                font-size: 17px;
+                line-height: 21px;
+                margin-left: 11px;
+            }
+        }
+    }
+    &__item-sale-off{
+        position: absolute;
+        top: 100px;
+        right: 37px;
+        color: #fff;
+        width: 129px;
+        height: 129px;
+        text-align: center;
+        border-radius: 100%;
+        background: #eed24c;
+        font-weight: bold;
+        font-size: 37px;
+        line-height: 40px;
+        font-family: "Montserrat", sans-serif;
+        p{
+            font-weight: bold;
+            font-size: 37px;
+            line-height: 40px;
+            font-family: "Montserrat", sans-serif;
+            padding: 44px 0 0;
+        }
+    }
+    &__item-half-top{
+        padding: 33px 38px 20px 35px;
+    }
+    &__item-half-bottom{
+        top: 0;
+        left: 0;
+        padding: 31px 26px 20px 41px;
+        text-align: end;
+    }
+    &__half-btn{
+        position: absolute;
+        right: 36px;
+        bottom: -60px;
+    }
+    &__half-title-botom{
+        h2{
+            text-transform: none;
+        }
+    }
+}
+.banner__item-btn a:hover i{
+    border-color: #ff6060;
+    color: #ff6060;
+    transition: 0.6s;
+}

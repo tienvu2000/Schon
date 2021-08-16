@@ -1,16 +1,1106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css"/>
     <title>Schon</title>
 </head>
 <body>
-    <a href="./scss/page/homepgae.html" class="link__html">homepgae</a>
+    <div class="homepage">
+        <div class="slider">
+            <div class="slider__light slider__item">
+                <div class="slider__img light">
+                    <img src="./assets/images/banner/light.jpg" alt="Light">
+                </div>
+                <div class="slider__content">
+                    <div class="slider__slogan">
+                        <strong>
+                            FURNITURE DESIGNS IDEAS
+                        </strong>
+                    </div>
+                    <div class="slider__title">
+                        <h1>Lightning</h1>
+                    </div>
+                    <div class="slider__sub-title">
+                        <h2>PENDANT LAMPS</h2>
+                    </div>
+                    <div class="slider__desc">
+                        <p>Consectetur adipisicing elit. Beatae accusamus, optio, repellendus inventore</p>
+                    </div>
+                    <div class="slider__btn">
+                        <a href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__lounge-chair slider__item">
+                <div class="slider__img">
+                    <img src="./assets/images/banner/bed.jpg" alt="lounge chair">
+                </div>
+                <div class="slider__content lounge-chair">
+                    <div class="slider__slogan">
+                        <strong>
+                            FURNITURE DESIGNS IDEAS
+                        </strong>
+                    </div>
+                    <div class="slider__title">
+                        <h1>LOUNGE CHAIRS</h1>
+                    </div>
+                    <div class="slider__sub-title">
+                        <h2>SW DAYBED</h2>
+                    </div>
+                    <div class="slider__desc">
+                        <p>Consectetur adipisicing elit. Beatae accusamus, optio, repellendus inventore</p>
+                    </div>
+                    <div class="slider__btn">
+                        <a href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__chair slider__item">
+                <div class="slider__img">
+                    <img src="./assets/images/banner/char.jpg" alt="chair">
+                </div>
+                <div class="slider__content chair">
+                    <div class="slider__slogan">
+                        <strong>
+                            FURNITURE DESIGNS IDEAS
+                        </strong>
+                    </div>
+                    <div class="slider__title">
+                        <h1>CARDBOARD</h1>
+                    </div>
+                    <div class="slider__sub-title">
+                        <h2> Sofas and Armchairs</h2>
+                    </div>
+                    <div class="slider__desc">
+                        <p>Consectetur adipisicing elit. Beatae accusamus, optio, repellendus inventore</p>
+                    </div>
+                    <div class="slider__btn">
+                        <a href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="grid wide">
+                <class class="banner__row row">
+                    <div class="banner__item col l-4 m-6 c-12">
+                        <div class="banner__item-img">
+                            <img src="./assets/images/banner/img01.jpg" alt="">
+                        </div>
+                        <div class="banner__item-content">
+                            <div class="banner__item-title">
+                                <h2>MY SMALL WRITING DESK</h2>
+                            </div>
+                            <div class="banner__item-btn">
+                                <a href="#">SHOP NOW<i class="fas fa-angle-right"></i></a>
+                            </div>
+                            <div class="banner__item-sale-off">
+                                <p>-20%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__item col l-4 m-6 c-12 banner__middle">
+                        <div class="banner__item-half">
+                            <div class="banner__item-img banner__half-img">
+                                <img src="./assets/images/banner/img02.jpg" alt="">
+                            </div>
+                            <div class="banner__item-content banner__item-half-top">
+                                <div class="banner__item-title">
+                                    <h2>MODULAR LOUNGE TEAK</h2> 
+                                </div>
+                                <div class="banner__item-price">
+                                    <p>$ 129.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner__item-half">
+                            <div class="banner__item-img banner__half-img">
+                                <img src="./assets/images/banner/img03.jpg" alt="">
+                            </div>
+                            <div class="banner__item-content banner__item-half-bottom ">
+                                <div class="banner__item-title banner__half-title-botom">
+                                    <h2>Modular technical fabric sofa</h2> 
+                                </div>
+                                <div class="banner__item-btn banner__half-btn ">
+                                    <a href="#">Shop now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__item col l-4 m-6 c-12">
+                        <div class="banner__item-img">
+                            <img src="./assets/images/banner/img04.jpg" alt="">
+                        </div>
+                        <div class="banner__item-content">
+                            <div class="banner__item-title">
+                                <h2>DIRECT LIGHT PENDANT LAMP</h2>
+                            </div>
+                            <div class="banner__item-price banner__item-price-last">
+                                <p>$ 129.00</p>
+                            </div>
+                            <div class="banner__item-btn">
+                                <a href="#">SHOP NOW <i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="grid wide">
+                <div class="product__filter">
+                    <div class="row">
+                        <div class="col l-12 c-12 m12 product__navbar">
+                            <div class="product__filter-select">
+                                <div class="product__filter-options">
+                                    <h2>Features</h2>
+                                </div>
+                                <div class="product__filter-options">
+                                    <h2>Latest</h2>
+                                </div>
+                                <div class="product__filter-options">
+                                    <h2>Best Seller</h2>
+                                </div>
+                            </div>
+                            <div class="product__filter-btn">
+                                <div class="product__filter-next">
+                                    <i class="fas fa-angle-left"></i>
+                                </div>
+                                <div class="product__filter-next">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__content">
+                    <div class="row product__row">
+                        <div class="product__item col l-2-4 m-4 c-12">
+                            <a href="#">
+                                <div class="product__item-img">
+                                    <img src="./assets/images/products/img01.jpg" alt="lounge chair">
+                                </div>
+                                <div class="product__item-body">
+                                    <div class="product__item-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__item-name">
+                                        <p>Puff chair</p>
+                                    </div>
+                                    <div class="product__item-price">
+                                        <h3><i class="fas fa-euro-sign"></i>287,00</h3>
+                                    </div>
+                                    <div class="product__item-links">
+                                        <ul>
+                                            <li><a href="#" class="product__link"><i class="fas fa-shopping-bag"></i><span>Add to Cart</span></a></li>
+                                            <li><a href="#" ><i class="far fa-heart"></i></a></li>
+                                            <li><a href="#" ><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product__item-nature">
+                                    <div class="product__item-sale-off isHide ">
+                                        <p> 15% Off</p>
+                                    </div>
+                                    <div class="product__item-new">
+                                        <p>NEW</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__item col l-2-4 m-4 c-12">
+                            <a href="#">
+                                <div class="product__item-img">
+                                    <img src="./assets/images/products/img02.jpg" alt="lounge chair">
+                                </div>
+                                <div class="product__item-body">
+                                    <div class="product__item-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__item-name">
+                                        <p>Bombi chair</p>
+                                    </div>
+                                    <div class="product__item-price">
+                                        <h3><i class="fas fa-euro-sign"></i>399,00</h3>
+                                    </div>
+                                    <div class="product__item-links">
+                                        <ul>
+                                            <li><a href="#" class="product__link"><i class="fas fa-shopping-bag"></i><span>Add to Cart</span></a></li>
+                                            <li><a href="#" ><i class="far fa-heart"></i></a></li>
+                                            <li><a href="#" ><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product__item-nature isHide">
+                                    <div class="product__item-sale-off ">
+                                        <p> 15% Off</p>
+                                    </div>
+                                    <div class="product__item-new">
+                                        <p>NEW</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__item col l-2-4 m-4 c-12">
+                            <a href="#">
+                                <div class="product__item-img">
+                                    <img src="./assets/images/products/img03.jpg" alt="lounge chair">
+                                </div>
+                                <div class="product__item-body">
+                                    <div class="product__item-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__item-name">
+                                        <p>Wood chair</p>
+                                    </div>
+                                    <div class="product__item-price">
+                                        <h3><i class="fas fa-euro-sign"></i>198,00</h3>
+                                    </div>
+                                    <div class="product__item-links">
+                                        <ul>
+                                            <li><a href="#" class="product__link"><i class="fas fa-shopping-bag"></i><span>Add to Cart</span></a></li>
+                                            <li><a href="#" ><i class="far fa-heart"></i></a></li>
+                                            <li><a href="#" ><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product__item-nature isHide">
+                                    <div class="product__item-sale-off ">
+                                        <p> 15% Off</p>
+                                    </div>
+                                    <div class="product__item-new">
+                                        <p>NEW</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__item col l-2-4 m-4 c-12">
+                            <a href="#">
+                                <div class="product__item-img">
+                                    <img src="./assets/images/products/img04.jpg" alt="lounge chair">
+                                </div>
+                                <div class="product__item-body">
+                                    <div class="product__item-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__item-name">
+                                        <p>Bombi chair</p>
+                                    </div>
+                                    <div class="product__item-price">
+                                        <h3><i class="fas fa-euro-sign"></i>200,00</h3>
+                                    </div>
+                                    <div class="product__item-links">
+                                        <ul>
+                                            <li><a href="#" class="product__link"><i class="fas fa-shopping-bag"></i><span>Add to Cart</span></a></li>
+                                            <li><a href="#" ><i class="far fa-heart"></i></a></li>
+                                            <li><a href="#" ><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product__item-nature">
+                                    <div class="product__item-sale-off ">
+                                        <p> 15% Off</p>
+                                    </div>
+                                    <div class="product__item-new">
+                                        <p>NEW</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__item col l-2-4 m-4 c-12">
+                            <a href="#">
+                                <div class="product__item-img">
+                                    <img src="./assets/images/products/img05.jpg" alt="lounge chair">
+                                </div>
+                                <div class="product__item-body">
+                                    <div class="product__item-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__item-name">
+                                        <p>Puff chair</p>
+                                    </div>
+                                    <div class="product__item-price">
+                                        <h3><i class="fas fa-euro-sign"></i>200,00</h3>
+                                    </div>
+                                    <div class="product__item-links">
+                                        <ul>
+                                            <li><a href="#" class="product__link"><i class="fas fa-shopping-bag"></i><span>Add to Cart</span></a></li>
+                                            <li><a href="#" ><i class="far fa-heart"></i></a></li>
+                                            <li><a href="#" ><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product__item-nature">
+                                    <div class="product__item-sale-off ">
+                                        <p> 15% Off</p>
+                                    </div>
+                                    <div class="product__item-new">
+                                        <p>NEW</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__item col l-2-4 m-4 c-12">
+                            <a href="#">
+                                <div class="product__item-img">
+                                    <img src="./assets/images/products/img06.jpg" alt="lounge chair">
+                                </div>
+                                <div class="product__item-body">
+                                    <div class="product__item-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__item-name">
+                                        <p>Puff chair</p>
+                                    </div>
+                                    <div class="product__item-price">
+                                        <h3><i class="fas fa-euro-sign"></i>287,00</h3>
+                                    </div>
+                                    <div class="product__item-links">
+                                        <ul>
+                                            <li><a href="#" class="product__link"><i class="fas fa-shopping-bag"></i><span>Add to Cart</span></a></li>
+                                            <li><a href="#" ><i class="far fa-heart"></i></a></li>
+                                            <li><a href="#" ><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product__item-nature">
+                                    <div class="product__item-sale-off ">
+                                        <p> 15% Off</p>
+                                    </div>
+                                    <div class="product__item-new">
+                                        <p>NEW</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__item col l-2-4 m-4 c-12">
+                            <a href="#">
+                                <div class="product__item-img">
+                                    <img src="./assets/images/products/img07.jpg" alt="lounge chair">
+                                </div>
+                                <div class="product__item-body">
+                                    <div class="product__item-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__item-name">
+                                        <p>Puff chair</p>
+                                    </div>
+                                    <div class="product__item-price">
+                                        <h3><i class="fas fa-euro-sign"></i>287,00</h3>
+                                    </div>
+                                    <div class="product__item-links">
+                                        <ul>
+                                            <li><a href="#" class="product__link"><i class="fas fa-shopping-bag"></i><span>Add to Cart</span></a></li>
+                                            <li><a href="#" ><i class="far fa-heart"></i></a></li>
+                                            <li><a href="#" ><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product__item-nature">
+                                    <div class="product__item-sale-off ">
+                                        <p> 15% Off</p>
+                                    </div>
+                                    <div class="product__item-new">
+                                        <p>NEW</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__item col l-2-4 m-4 c-12">
+                            <a href="#">
+                                <div class="product__item-img">
+                                    <img src="./assets/images/products/img08.jpg" alt="lounge chair">
+                                </div>
+                                <div class="product__item-body">
+                                    <div class="product__item-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__item-name">
+                                        <p>Puff chair</p>
+                                    </div>
+                                    <div class="product__item-price">
+                                        <h3><i class="fas fa-euro-sign"></i>287,00</h3>
+                                    </div>
+                                    <div class="product__item-links">
+                                        <ul>
+                                            <li><a href="#" class="product__link"><i class="fas fa-shopping-bag"></i><span>Add to Cart</span></a></li>
+                                            <li><a href="#" ><i class="far fa-heart"></i></a></li>
+                                            <li><a href="#" ><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product__item-nature">
+                                    <div class="product__item-sale-off ">
+                                        <p> 15% Off</p>
+                                    </div>
+                                    <div class="product__item-new">
+                                        <p>NEW</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__item col l-2-4 m-4 c-12">
+                            <a href="#">
+                                <div class="product__item-img">
+                                    <img src="./assets/images/products/img09.jpg" alt="lounge chair">
+                                </div>
+                                <div class="product__item-body">
+                                    <div class="product__item-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__item-name">
+                                        <p>Puff chair</p>
+                                    </div>
+                                    <div class="product__item-price">
+                                        <h3><i class="fas fa-euro-sign"></i>287,00</h3>
+                                    </div>
+                                    <div class="product__item-links">
+                                        <ul>
+                                            <li><a href="#" class="product__link"><i class="fas fa-shopping-bag"></i><span>Add to Cart</span></a></li>
+                                            <li><a href="#" ><i class="far fa-heart"></i></a></li>
+                                            <li><a href="#" ><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product__item-nature">
+                                    <div class="product__item-sale-off ">
+                                        <p> 15% Off</p>
+                                    </div>
+                                    <div class="product__item-new">
+                                        <p>NEW</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__item col l-2-4 m-4 c-12">
+                            <a href="#">
+                                <div class="product__item-img">
+                                    <img src="./assets/images/products/img10.jpg" alt="lounge chair">
+                                </div>
+                                <div class="product__item-body">
+                                    <div class="product__item-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__item-name">
+                                        <p>Puff chair</p>
+                                    </div>
+                                    <div class="product__item-price">
+                                        <h3><i class="fas fa-euro-sign"></i>287,00</h3>
+                                    </div>
+                                    <div class="product__item-links">
+                                        <ul>
+                                            <li><a href="#" class="product__link"><i class="fas fa-shopping-bag"></i><span>Add to Cart</span></a></li>
+                                            <li><a href="#" ><i class="far fa-heart"></i></a></li>
+                                            <li><a href="#" ><i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product__item-nature">
+                                    <div class="product__item-sale-off ">
+                                        <p> 15% Off</p>
+                                    </div>
+                                    <div class="product__item-new">
+                                        <p>NEW</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product__best-seller">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="product__best-seller-heading">
+                        <div class="product__best-seller-title">
+                            <h2>BEST SELLER</h2>
+                        </div>
+                        <div class="product__best-seller-sub-title">
+                            <p>EXCEPTEUR SINT OCCAECAT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row product__seller-row">
+                    <div class="product__item col l-3 m-4 c-12 product__seller-item">
+                        <a href="#">
+                            <div class="product__item-img">
+                                <img src="./assets/images/products/img01.jpg" alt="lounge chair">
+                            </div>
+                            <div class="product__item-body product__seller-body">
+                                <div class="product__item-rating">
+                                    <i class="fas fa-star product__item-rating-current"></i>
+                                    <i class="fas fa-star product__item-rating-current"></i>
+                                    <i class="fas fa-star product__item-rating-current"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="product__item-name">
+                                    <p>Puff chair</p>
+                                </div>
+                                <div class="product__item-price">
+                                    <h3><i class="fas fa-euro-sign"></i>287,00</h3>
+                                </div>
+                                <div class="product__item-links product__seller-links">
+                                    <ul>
+                                        <li><a href="#" class="product__seller-link product__link-first" ><i class="fas fa-shopping-bag"></i><span>Add to Cart</span></a></li>
+                                        <li><a href="#" class="product__seller-link " ><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#" class="product__seller-link " ><i class="fas fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__item-nature product__seller-nature">
+                                <div class="product__item-sale-off isHide ">
+                                    <p> 15% Off</p>
+                                </div>
+                                <div class="product__item-new">
+                                    <p>NEW</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product__item col l-3 m-4 c-12 product__seller-item">
+                        <a href="#">
+                            <div class="product__item-img">
+                                <img src="./assets/images/products/img02.jpg" alt="lounge chair">
+                            </div>
+                            <div class="product__item-body product__seller-body">
+                                <div class="product__item-rating">
+                                    <i class="fas fa-star product__item-rating-current"></i>
+                                    <i class="fas fa-star product__item-rating-current"></i>
+                                    <i class="fas fa-star product__item-rating-current"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="product__item-name">
+                                    <p>Bombi chair</p>
+                                </div>
+                                <div class="product__item-price">
+                                    <h3><i class="fas fa-euro-sign"></i>399,00</h3>
+                                </div>
+                                <div class="product__item-links product__seller-links">
+                                    <ul>
+                                        <li><a href="#" class="product__seller-link product__link-first" ><i class="fas fa-shopping-bag"></i><span>Add to Cart</span></a></li>
+                                        <li><a href="#" class="product__seller-link " ><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#" class="product__seller-link " ><i class="fas fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__item-nature product__seller-nature isHide">
+                                <div class="product__item-sale-off ">
+                                    <p> 15% Off</p>
+                                </div>
+                                <div class="product__item-new">
+                                    <p>NEW</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product__item col l-3 m-4 c-12 product__seller-item">
+                        <a href="#">
+                            <div class="product__item-img">
+                                <img src="./assets/images/products/img03.jpg" alt="lounge chair">
+                            </div>
+                            <div class="product__item-body product__seller-body">
+                                <div class="product__item-rating">
+                                    <i class="fas fa-star product__item-rating-current"></i>
+                                    <i class="fas fa-star product__item-rating-current"></i>
+                                    <i class="fas fa-star product__item-rating-current"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="product__item-name">
+                                    <p>Wood chair</p>
+                                </div>
+                                <div class="product__item-price">
+                                    <h3><i class="fas fa-euro-sign"></i>198,00</h3>
+                                </div>
+                                <div class="product__item-links product__seller-links">
+                                    <ul>
+                                        <li><a href="#" class="product__seller-link product__link-first" ><i class="fas fa-shopping-bag"></i><span>Add to Cart</span></a></li>
+                                        <li><a href="#" class="product__seller-link " ><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#" class="product__seller-link " ><i class="fas fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__item-nature product__seller-nature isHide">
+                                <div class="product__item-sale-off ">
+                                    <p> 15% Off</p>
+                                </div>
+                                <div class="product__item-new">
+                                    <p>NEW</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- <div class="product__item col l-3 m-4 c-12 product__seller-item">
+                        <a href="#">
+                            <div class="product__item-img">
+                                <img src="./assets/images/products/img04.jpg" alt="lounge chair">
+                            </div>
+                            <div class="product__item-body product__seller-body">
+                                <div class="product__item-rating">
+                                    <i class="fas fa-star product__item-rating-current"></i>
+                                    <i class="fas fa-star product__item-rating-current"></i>
+                                    <i class="fas fa-star product__item-rating-current"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="product__item-name">
+                                    <p>Bombi chair</p>
+                                </div>
+                                <div class="product__item-price">
+                                    <h3><i class="fas fa-euro-sign"></i>200,00</h3>
+                                </div>
+                                <div class="product__item-links product__seller-links">
+                                    <ul>
+                                        <li><a href="#" class="product__seller-link product__link-first" ><i class="fas fa-shopping-bag"></i><span>Add to Cart</span></a></li>
+                                        <li><a href="#" class="product__seller-link " ><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#" class="product__seller-link " ><i class="fas fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__item-nature product__seller-nature">
+                                <div class="product__item-sale-off ">
+                                    <p> 15% Off</p>
+                                </div>
+                                <div class="product__item-new">
+                                    <p>NEW</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+                    <div class="product__item col l-3 m-4 c-12 product__seller-item">
+                        <a href="#">
+                            <div class="product__item-img">
+                                <img src="./assets/images/products/img05.jpg" alt="lounge chair">
+                            </div>
+                            <div class="product__item-body product__seller-body">
+                                <div class="product__item-rating">
+                                    <i class="fas fa-star product__item-rating-current"></i>
+                                    <i class="fas fa-star product__item-rating-current"></i>
+                                    <i class="fas fa-star product__item-rating-current"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="product__item-name">
+                                    <p>Puff chair</p>
+                                </div>
+                                <div class="product__item-price">
+                                    <h3><i class="fas fa-euro-sign"></i>200,00</h3>
+                                </div>
+                                <div class="product__item-links product__seller-links">
+                                    <ul>
+                                        <li><a href="#" class="product__seller-link product__link-first" ><i class="fas fa-shopping-bag"></i><span>Add to Cart</span></a></li>
+                                        <li><a href="#" class="product__seller-link " ><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#" class="product__seller-link " ><i class="fas fa-eye"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__item-nature product__seller-nature">
+                                <div class="product__item-sale-off ">
+                                    <p> 15% Off</p>
+                                </div>
+                                <div class="product__item-new">
+                                    <p>NEW</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product__list">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12 product__list-content">
+                        <div class="product__list-title">
+                            <h2>Hot Sale</h2>
+                        </div>
+                        <div class="product__list-col">
+                            <a href="#" class="product__list-item">
+                                <div class="product__list-item-img">
+                                    <img src="./assets/images/products/img14.jpg" alt="chair">
+                                </div>
+                                <div class="product__list-item-body">
+                                    <div class="product__list-item-title">
+                                        <h3>Egon Wooden Chair</h3>
+                                    </div>
+                                    <div class="product__item-rating product__list-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__list-item-price">
+                                        <div class="product__list-price-old">
+                                            <p>$75,00</p>
+                                        </div>
+                                        <div class="product__list-price-current">
+                                            <p>$55,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__list-col">
+                            <a href="#" class="product__list-item">
+                                <div class="product__list-item-img">
+                                    <img src="./assets/images/products/img15.jpg" alt="chair">
+                                </div>
+                                <div class="product__list-item-body">
+                                    <div class="product__list-item-title">
+                                        <h3>Oyo Cantilever Chair</h3>
+                                    </div>
+                                    <div class="product__item-rating product__list-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__list-item-price">
+                                        <div class="product__list-price-old">
+                                            <p>$75,00</p>
+                                        </div>
+                                        <div class="product__list-price-current">
+                                            <p>$55,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__list-col">
+                            <a href="#" class="product__list-item">
+                                <div class="product__list-item-img">
+                                    <img src="./assets/images/products/img16.jpg" alt="chair">
+                                </div>
+                                <div class="product__list-item-body">
+                                    <div class="product__list-item-title">
+                                        <h3>Kurve Chair</h3>
+                                    </div>
+                                    <div class="product__item-rating product__list-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__list-item-price">
+                                        <div class="product__list-price-old">
+                                            <p>$75,00</p>
+                                        </div>
+                                        <div class="product__list-price-current">
+                                            <p>$55,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12 product__list-content">
+                        <div class="product__list-title">
+                            <h2>Featured Products</h2>
+                        </div>
+                        <div class="product__list-col">
+                            <a href="#" class="product__list-item">
+                                <div class="product__list-item-img">
+                                    <img src="./assets/images/products/img17.jpg" alt="chair">
+                                </div>
+                                <div class="product__list-item-body">
+                                    <div class="product__list-item-title">
+                                        <h3>Bombi Chair</h3>
+                                    </div>
+                                    <div class="product__item-rating product__list-rating ">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__list-item-price">
+                                        <div class="product__list-price-old">
+                                            <p>$75,00</p>
+                                        </div>
+                                        <div class="product__list-price-current">
+                                            <p>$55,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__list-col">
+                            <a href="#" class="product__list-item">
+                                <div class="product__list-item-img">
+                                    <img src="./assets/images/products/img18.jpg" alt="chair">
+                                </div>
+                                <div class="product__list-item-body">
+                                    <div class="product__list-item-title">
+                                        <h3>Oyo Cantilever Chair</h3>
+                                    </div>
+                                    <div class="product__item-rating product__list-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__list-item-price">
+                                        <div class="product__list-price-old">
+                                            <p>$75,00</p>
+                                        </div>
+                                        <div class="product__list-price-current">
+                                            <p>$55,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__list-col">
+                            <a href="#" class="product__list-item">
+                                <div class="product__list-item-img">
+                                    <img src="./assets/images/products/img19.jpg" alt="chair">
+                                </div>
+                                <div class="product__list-item-body">
+                                    <div class="product__list-item-title">
+                                        <h3>Puff Chair</h3>
+                                    </div>
+                                    <div class="product__item-rating product__list-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__list-item-price">
+                                        <div class="product__list-price-old">
+                                            <p>$75,00</p>
+                                        </div>
+                                        <div class="product__list-price-current">
+                                            <p>$55,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12 product__list-content">
+                        <div class="product__list-title">
+                            <h2>Sale Products</h2>
+                        </div>
+                        <div class="product__list-col">
+                            <a href="#" class="product__list-item">
+                                <div class="product__list-item-img">
+                                    <img src="./assets/images/products/img14.jpg" alt="chair">
+                                </div>
+                                <div class="product__list-item-body">
+                                    <div class="product__list-item-title">
+                                        <h3>Egon Wooden Chair</h3>
+                                    </div>
+                                    <div class="product__item-rating product__list-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__list-item-price">
+                                        <div class="product__list-price-old">
+                                            <p>$75,00</p>
+                                        </div>
+                                        <div class="product__list-price-current">
+                                            <p>$55,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__list-col">
+                            <a href="#" class="product__list-item">
+                                <div class="product__list-item-img">
+                                    <img src="./assets/images/products/img15.jpg" alt="chair">
+                                </div>
+                                <div class="product__list-item-body">
+                                    <div class="product__list-item-title">
+                                        <h3>Oyo Cantilever Chair</h3>
+                                    </div>
+                                    <div class="product__item-rating product__list-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__list-item-price">
+                                        <div class="product__list-price-old">
+                                            <p>$75,00</p>
+                                        </div>
+                                        <div class="product__list-price-current">
+                                            <p>$55,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__list-col">
+                            <a href="#" class="product__list-item">
+                                <div class="product__list-item-img">
+                                    <img src="./assets/images/products/img16.jpg" alt="chair">
+                                </div>
+                                <div class="product__list-item-body">
+                                    <div class="product__list-item-title">
+                                        <h3>Kurve Chair</h3>
+                                    </div>
+                                    <div class="product__item-rating product__list-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__list-item-price">
+                                        <div class="product__list-price-old">
+                                            <p>$75,00</p>
+                                        </div>
+                                        <div class="product__list-price-current">
+                                            <p>$55,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12 product__list-content">
+                        <div class="product__list-title">
+                            <h2>Top Rated Products</h2>
+                        </div>
+                        <div class="product__list-col">
+                            <a href="#" class="product__list-item">
+                                <div class="product__list-item-img">
+                                    <img src="./assets/images/products/img20.jpg" alt="chair">
+                                </div>
+                                <div class="product__list-item-body">
+                                    <div class="product__list-item-title">
+                                        <h3>Marvelous Wooden Chair</h3>
+                                    </div>
+                                    <div class="product__item-rating product__list-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__list-item-price">
+                                        <div class="product__list-price-old">
+                                            <p>$75,00</p>
+                                        </div>
+                                        <div class="product__list-price-current">
+                                            <p>$55,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__list-col">
+                            <a href="#" class="product__list-item">
+                                <div class="product__list-item-img">
+                                    <img src="./assets/images/products/img21.jpg" alt="chair">
+                                </div>
+                                <div class="product__list-item-body">
+                                    <div class="product__list-item-title">
+                                        <h3>Oyo Cantilever Chair</h3>
+                                    </div>
+                                    <div class="product__item-rating product__list-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__list-item-price">
+                                        <div class="product__list-price-old">
+                                            <p>$75,00</p>
+                                        </div>
+                                        <div class="product__list-price-current">
+                                            <p>$55,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__list-col">
+                            <a href="#" class="product__list-item">
+                                <div class="product__list-item-img">
+                                    <img src="./assets/images/products/img16.jpg" alt="chair">
+                                </div>
+                                <div class="product__list-item-body">
+                                    <div class="product__list-item-title">
+                                        <h3>Kurve Chair</h3>
+                                    </div>
+                                    <div class="product__item-rating product__list-rating">
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="fas fa-star product__item-rating-current"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__list-item-price">
+                                        <div class="product__list-price-old">
+                                            <p>$75,00</p>
+                                        </div>
+                                        <div class="product__list-price-current">
+                                            <p>$55,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Thu vien slick -->
+    <script type="text/javascript" src="./assets/slick/slick.js"></script>
+    <script>
+        // slick slider
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 1000,
+            fade: true,
+            cssEase: 'linear'
+        });
+        //  slick best seller
+        // $('.product__seller-row').slick({
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1,
+        //     autoplay: true,
+        //     autoplaySpeed: 5000,
+        // });
+    </script>
 </body>
 </html>

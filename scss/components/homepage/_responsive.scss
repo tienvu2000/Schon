@@ -1,0 +1,125 @@
+@include maxW(1023px){
+    .slider{
+        padding: 0;
+    }
+    .slider__img{
+        img{
+            min-height: 576px;
+        }
+    }
+    .slider__content{
+        top: 29%;
+    }
+    .slider__desc{
+        margin: -12px 0 12px 0;
+    }
+    .lounge-chair{
+        transform: translate(65px,-10px)
+    }
+    .chair{
+        top: 25%;
+        transform: translateX(-80px);
+    }
+    .slider__title{
+        margin: -12px 0;
+    }
+    .banner__item{
+        &:last-child{
+            display: none;
+        }
+    }
+    .product{
+        margin: 0 10px;
+    }
+    .product__content{
+        width: 100%;
+        max-height: 640px;
+        overflow: hidden;
+    }
+    .product__item-nature{
+        left: 10px;
+    }
+    .row.product__seller-row {
+        max-height: 370px;
+        overflow: hidden;
+    }
+}
+@include maxW(767px){
+    .slider__img{
+        img{
+            min-height: 340px;
+        }
+    }
+    .slider__content{
+        top: 20%;
+    }
+    .slider__title{
+        h1{
+            font-size: 45px;
+            line-height: 55px;
+        }
+    }
+    .slider__sub-title{
+        margin: 8px 0 24px;
+        h2{
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
+    .slider__slogan {
+        margin: 0 0 24px;
+        strong{
+            letter-spacing: 5px;
+        }
+    }
+    .slider__desc{
+        p{
+            margin: 0 auto 40px;
+        }
+    }
+    ul.slick-dots {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .lounge-chair{
+        top: 20%;
+        transform: translateX(0);
+    }
+    .chair{
+        top: 20%;
+        transform: translate(0);
+    }
+    .banner__item{
+        &:last-child{
+            display: block;
+        }
+        &:first-child{
+            margin-bottom:24px;
+        }
+    }
+    .banner__half-btn{
+        bottom: -30px;
+    }
+    .banner__item:first-child .banner__item-content {
+            padding: 15px;
+    }
+    .banner__item-title{
+        h2{
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0;
+        }
+    }
+    .product__filter-options{
+        margin: 0 5px 0 0;
+        padding: 0 0 0 5px;
+        h2{
+            font-size: 11px;
+        }
+    }
+    .banner__item-sale-off {
+        top: 50px;
+        right: 20px;
+    }
+}

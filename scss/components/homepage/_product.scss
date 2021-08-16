@@ -1,0 +1,251 @@
+.product{
+    padding: 64px 0 42px 0;
+    position: relative;
+    &__filter{
+        margin-bottom: 5px;
+        width:100%;
+    }
+    &__navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__filter-select{
+        display: flex;
+        align-items: center;
+    }
+    &__filter-options{
+        margin: 0 28px 0 0;
+        padding: 0 0 0 30px;
+        border-left: 1px solid #d8d8d8;
+        &:hover{
+            cursor: pointer;
+            color: #3a3a3a;
+            transition: 1s;
+        }
+        &:first-child{
+            border: 0;
+            padding: 0;
+        }
+        h2{
+            text-transform: uppercase;
+            font: 700 18px/20px "Montserrat", sans-serif;
+        }
+    }
+    &__filter-btn{
+        width: 75px;
+        height:37px;
+        border-radius: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #eeeeee;
+    }
+    &__filter-next{
+        i{
+            padding: 7px 11px;
+            background:#fff;
+            border-radius:50%;
+            font-size:16px;
+            margin: 1px;
+            @include hover {
+                background: #ff6060;
+                color:#fff;
+                cursor:pointer;
+                transition: 0.6s
+            };
+        }
+    }
+    &__row{
+        justify-content: space-between;
+    }
+    &__item{
+        position: relative;
+        padding: 0 0 20px 0;
+        &:hover .product__item-links{
+            display: block;
+            transition: 0.6s;
+        }
+    }
+    &__item-img{
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    &__item-body{
+        text-align: center;
+        position: relative;
+    }
+    &__item-rating{
+        margin: 0 0 5px 0;
+        i{
+            line-height: 1;
+            font-size: 12px;
+        }
+    }
+    &__item-rating-current{
+        color: #c8a760;
+    }
+    &__item-name{
+        margin: 0 0 10px 0;
+        p{
+            color: #757575;
+            text-transform: capitalize;
+            font: 600 14px/20px "Source Sans Pro", sans-serif;
+        }
+    }
+    &__item-price{
+        h3{
+            color: #010101;
+            font: 600 17px/20px "Source Sans Pro", sans-serif;
+            i{
+                font-size: 13px;
+                margin: 0 6px 0 0;
+            }
+        }
+    }
+    &__item-nature{
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+    &__item-new{
+        p{
+            width:46px;
+            color: #fff;
+            padding: 3px 6px;
+            background: #000;
+            text-transform: uppercase;
+            font: 700 13px/16px "Montserrat", sans-serif;
+        }
+    }
+    &__item-sale-off{
+        p{
+            color: #fff;
+            padding: 3px 6px;
+            background: #b2cc29;
+            font: 700 14px/16px "Montserrat", sans-serif;
+        }
+    }
+    &__item-links{
+        display: none;
+        ul{
+            display: flex;
+            justify-content:center;
+            position:absolute;
+            bottom: 70%;
+            width: 99%;
+            border: 1px solid #eee;
+            li{
+                a{
+                    color: #8a8a8a;
+                    padding: 14px 17px;
+                    font-size: 14px;
+                    display: inline-block; 
+                    border-left: 1px solid #eee;
+                    background-color: #fff;
+                    @include hover;
+                }
+            }
+        }
+    }
+    &__link{
+        margin-left: -43px;
+        i{
+            margin-right:10px;
+        }
+    }
+    &__best-seller{
+        padding:60px 0 90px 0;
+        background-color: #f8f8f8;
+    }
+    &__best-seller-heading{
+        text-align: center;
+        width:100%;
+        color: #a0a0a0;
+        margin: 0 0 24px 0;
+        letter-spacing: 4px;
+        font: 700 14px/20px "Source Sans Pro", sans-serif;
+    }
+    &__best-seller-title{
+        h2{
+            color: #3a3a3a;
+            margin: 0 0 2px 0;
+            letter-spacing: 0;
+            font: 700 26px/30px "Montserrat", sans-serif;
+        }
+    }
+    &__seller-item{
+        background-color: #f8f8f8;
+        padding: 10px 5px;
+    }
+    &__seller-body{
+        color: #fff;
+        padding: 16px 12px;
+    }
+    &__seller-nature{
+        left: 5px;
+    }
+    &__seller-links{
+        ul{
+            width: 61%;
+            left: 25%;
+        }
+    }
+    &__link-first{
+        margin-left:-70px;
+    }
+    &__list{
+        padding: 70px 0 65px;
+    }
+    &__list-col{
+        margin: 0 0 20px 0;
+    }
+    &__list-title{
+        margin: 0 0 21px 0;
+        h2{
+            color: #3a3a3a;
+            font: 700 20px/25px "Montserrat", sans-serif;
+        }
+    }
+    &__list-item{
+        display: flex;
+        align-items: center;
+    }
+    &__list-item-img{
+        width:80px;
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    &__list-item-title{
+        h3{
+            color: #959596;
+            margin: 0 0 5px 0;
+            font: 14px/16px "Montserrat", sans-serif;
+            &:hover{
+                @include hover;
+            }
+        }
+    }
+    &__list-item-price{
+        display: flex;
+    }
+    &__list-price-old{
+        p{
+            opacity: 0.6;
+            color: #252528;
+            margin: 0 13px 0 0;
+            font: 14px/18px "Montserrat", sans-serif;
+            text-decoration: line-through;
+        }
+    }
+    &__list-price-current{
+        p{
+            color: #252528;
+            font: 18px/18px "Montserrat", sans-serif;
+        }
+    }
+}
