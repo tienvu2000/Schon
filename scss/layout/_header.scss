@@ -1,0 +1,350 @@
+// body {
+//     background-color: rebeccapurple;
+// }
+$top: 46px;
+$margin-left: 20px;
+
+.header {
+    padding: 0 20px;
+    // background-color: red;
+    a {
+        color: $menu-color;
+    }
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 21px 0;
+        position: relative;
+    }
+
+    &__logo {
+        line-height: 0;
+    }
+
+    &__nav {
+        text-transform: uppercase;
+        font: 14px/20px "Montserrat", sans-serif;
+        margin-left: auto;
+    }
+    &__menu {
+        background-color: white;
+        display: flex;
+    }
+
+    &__list {
+        position: relative;
+        margin-left: $margin-left;
+        i {
+            display: none;
+        }
+    }
+
+    &__drop {
+        opacity: 0;
+        visibility: hidden;
+        padding-top: 27px;
+        position: absolute;
+        // top: $top;
+        left: 0;
+        width: 220px;
+        transform: translateY(10px);
+        font: 300 12px/35px "Source Sans Pro", sans-serif;
+        li {
+            padding: 0 20px;
+            border-bottom: 2px solid $drop-color;
+            background-color: white;
+            // background-color: red;
+        }
+        a {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__list a:hover {
+        color: $hover-red;
+        transition: all 0.5s;
+    }
+
+    &__list:hover &__drop {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.5s;
+        z-index: 1000;
+        transform: translateY(0);
+    }
+
+    &__icon {
+        span {
+            font-weight: 300;
+            color: white;
+        }
+        ul {
+            display: flex;
+        }
+        li {
+            margin-left: 20px;
+        }
+        a {
+            font-weight: 600;
+        }
+        & a:hover {
+            color: $hover-red;
+            transition: all 0.5s;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__nav {
+            opacity: 0;
+            visibility: hidden;
+            // background-color: rebeccapurple;
+            width: 100%;
+            position: absolute;
+            top: 73px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        &__menu {
+            flex-direction: column;
+            border-top: 1px solid #ccc;
+            i {
+                display: inline;
+            }
+        }
+
+        &__list{
+            margin-left: 0;
+            a {
+                display: block;
+                width: 100%;
+                padding: 15px;
+                box-sizing: border-box;
+                letter-spacing: 1px;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+
+        &__drop {
+            opacity: 0;
+            visibility: hidden;
+            position: relative;
+            padding-top: 0;
+            margin-top: -10px;
+            width: 100%;
+            overflow: hidden;
+            max-height: 0;
+            ul li {
+                padding: 0;
+                border: none;
+            }
+            a {
+                padding: 0 15px;
+                box-sizing: border-box;
+                border: none;
+            }
+        }
+    }
+}
+
+.page {
+    position: static;
+    margin-left: $margin-left;
+    & a:hover {
+        color: $hover-red;
+        transition: all 0.5s;
+    }
+
+    i {
+        display: inline;
+    }
+
+    ul {
+        font: 300 14px/20px "Source Sans Pro", sans-serif;
+        color: $header-page;
+        text-transform: capitalize;
+    }
+    li {
+        margin-bottom: 4px;
+    }
+
+    // &__hover::after {
+    //     width: 20px;
+    //     height: 20px;
+    //     background-color: red;
+    //     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    // }
+    &__drop {
+        opacity: 0;
+        visibility: hidden;
+        max-width: 1200px;
+        padding-top: 30px;
+        margin: 0 auto;
+        position: absolute;
+        top: 43px;
+        left: 0px;
+        right: 0px;
+        box-sizing: border-box;
+        font: 300 12px/35px "Source Sans Pro", sans-serif;
+    }
+
+    &__hover:hover &__drop {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.5s;
+        z-index: 1000;
+    }
+    &__hover:hover .dark {
+        opacity: 1 !important;
+        z-index: 1;
+    }
+
+    &__wrap {
+        display: flex;
+        // background-color: aqua;
+        background-color: white;
+        padding: 60px 72px;
+        div {
+            flex: 1;
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        display: block;
+        color: #535353;
+        font-weight: 700;
+        margin: 0 0 18px;
+        padding: 0 0 4px;
+        position: relative;
+        pointer-events: none;
+        font: 16px/20px "Montserrat", sans-serif;
+        i {
+            display: none;
+        }
+    }
+    &__title a::after {
+        content: "";
+        position: absolute;
+        width: 68px;
+        height: 2.5px;
+        background-color: $page-title;
+        left: 0;
+        bottom: 0;
+    }
+    &__2 {
+        div {
+            margin-bottom: 35px;
+        }
+    }
+    &__img {
+        width: 245px;
+        img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &{
+            margin-left: 0;
+            a {
+                display: block;
+                width: 100%;
+                padding: 15px;
+                box-sizing: border-box;
+                letter-spacing: 1px;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+        &__wrap {
+            padding: 9px 25px 0 25px;
+            flex-direction: column;
+        }
+        &__drop {
+            opacity: 0;
+            visibility: hidden;
+            max-height:0px;
+            position: relative;
+            top: 0;
+            padding-top: 0;
+            margin-top: -10px;
+            width: 100%;
+            overflow: hidden;
+            ul li {
+                padding: 0;
+                border: none;
+            }
+            a {
+                padding: 0 15px;
+                box-sizing: border-box;
+                border: none;
+            }
+        }
+
+        &__2 {
+            div {
+                margin: 0;
+            }
+        }
+        &__title {
+            margin: 0;
+            margin-bottom: 9px;
+            padding: 0;
+            a {
+                margin: 0;
+                padding: 0;
+                font-size: 14px;
+                line-height: 16px;
+                pointer-events: auto;
+                &::after {
+                    display: none;
+                }
+            }
+
+            i {
+                display: inline;
+            }
+        }
+        &__detail {
+            max-height: 0px;
+            overflow: hidden;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
+
+.fa-heart,
+.fa-shopping-bag {
+    position: relative;
+}
+.num {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    border: 2px solid white;
+    font: 11px/15px "Montserrat", sans-serif;
+    // transform: translate(-50%, -50%);
+    position: absolute;
+    top: 40%;
+    left: 12px;
+}
+
+.bar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .bar-menu {
+        display: inline;
+    }
+}
+.selec {
+    display: none !important;
+}

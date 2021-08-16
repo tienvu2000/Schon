@@ -9,6 +9,12 @@
 }
 ol, ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
 }
 a{
 	text-decoration: none;
@@ -17,4 +23,22 @@ html{
     font-size: 62.5%;
 	color: $colorPrimary ;
 	box-sizing: border-box;
+}
+form, fieldset {
+	padding: 0;
+}
+form, fieldset, input, button {
+	border: none;
+	margin: 0;
+	display: block;
+	// padding: 0;
+}
+
+label {  
+    margin: 0;
+    color: #9a9a9a;
+    position: relative;
+	padding-left: 6px ;
+	text-transform: capitalize ;
+    font: 400 11px/18px "Oxygen", sans-serif;
 }
