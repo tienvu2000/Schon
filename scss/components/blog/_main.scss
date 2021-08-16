@@ -8,7 +8,6 @@
             img{
                 display: block;
                 width: 100%;
-                height: auto;
             }
         }
         .item__social{
@@ -112,25 +111,34 @@
         }
     }
 }
+@include maxW(1023px){
+    .header__blog-img{
+        img{
+            width: 100%;
+            min-height: 183px;
+            object-fit: cover;
+        }
+    }
+}
 @media screen and (max-width:767px){
     .grid{
         padding: 0 15px;
         box-sizing: border-box;
     }
-    .header__img{
+    .header__blog-img{
         img{
             min-height: 105px;
             object-fit: cover;
         }
 
     }
-    .header__title{
+    .header__blog-title{
         h1{
             font-size: 2rem;
         }
     }
-    .header__link-action{
-        .header__list-bar{
+    .header__blog-link-action{
+        .header__blog-list-bar{
             i{
                 font-size: 2rem;
             }
