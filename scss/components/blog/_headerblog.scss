@@ -1,5 +1,5 @@
 
-.header__banner{
+.header__blog-banner{
     position: relative;
     img{
         display: block;
@@ -7,7 +7,7 @@
         height: auto;
     }
 }
-.header__title{
+.header__blog-title{
     color: #383838;
     position: absolute;
     width: 100%;
@@ -20,31 +20,31 @@
         letter-spacing: 1px;
     }
 }
-.header__nav{
+.header__blog-nav{
     background: #eeeeee;
     height: 44px;
     width: 100%;
     display:flex;
 }
-.header__nav-items{
+.header__blog-nav-items{
         line-height: 44px;
         display: flex;
         justify-content: space-between;
         align-items: center;
 }
-.header__link-page{
+.header__blog-link-page{
     a{
         margin: 0px 4px;
         color: $colorPrimary;
     }
 }
-.header__list-items{
+.header__blog-list-items{
     a{
 
         color: $colorPrimary;
     }
 }
-.header__link-action{
+.header__blog-link-action{
     a{
         margin: 0px 8px;
         color: $colorPrimary;
@@ -56,7 +56,7 @@
 
     }
 }
-.header__link-page,.header__list-items{
+.header__blog-link-page,.header__blog-list-items{
     a{
         @include hover;
         i{

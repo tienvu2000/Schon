@@ -17,8 +17,8 @@
 <body>
     <!--BEGIN HEADER-->
     <header class="header">
-        <div  class="grid">
-            <div class="header__wrap">
+        <div class="grid wide">
+            <div class="header__wrap row">
                 <div class="header__logo">
                     <a href="#">
                         <img src="./assets/images/logo.png" alt="logo" />
@@ -101,19 +101,19 @@
                             <div class="header__drop">
                                 <ul>
                                     <li>
-                                        <a href="#">BLOG FULLWIDTH PAGE</a>
+                                        <a href="./blog.html">BLOG FULLWIDTH PAGE</a>
                                     </li>
                                     <li>
-                                        <a href="#">BLOG RIGHT SIDEBAR2</a>
+                                        <a href="./blog.html">BLOG RIGHT SIDEBAR2</a>
                                     </li>
                                     <li>
-                                        <a href="#">BLOG POSTLIST MASONRY</a>
+                                        <a href="./blog.html">BLOG POSTLIST MASONRY</a>
                                     </li>
                                     <li>
-                                        <a href="#">BLOG POST DETAIL SIDEBAR</a>
+                                        <a href="./blog.html">BLOG POST DETAIL SIDEBAR</a>
                                     </li>
                                     <li>
-                                        <a href="#">BLOG POST DETAIL FULL WIDTH</a>
+                                        <a href="./blog.html">BLOG POST DETAIL FULL WIDTH</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1526,9 +1526,9 @@
      <!-- BEGIN FOOTER-->
      <footer class="footer">
         <div class="footer__top">
-            <div class="grid">
-                <div class="footer__wrap">
-                    <div class="footer__card">
+            <div class="grid wide">
+                <div class="footer__wrap row">
+                    <div class="footer__card col l-3 m-6 c-12">
                         <div>
                             <div class="footer__logo">
                                 <img src="./assets/images/logo--footer.png" alt="logo">
@@ -1546,7 +1546,7 @@
                             <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
                         </ul>
                     </div>
-                    <div class="footer__card">
+                    <div class="footer__card col l-3 m-6 c-12">
                         <h3>
                             Twitter
                         </h3>
@@ -1567,7 +1567,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="footer__card">
+                    <div class="footer__card col l-3 m-6 c-12">
                         <h3>
                             Product Tags
                         </h3>
@@ -1588,7 +1588,7 @@
                             <li><a href=""> Desks </a> </li>
                         </ul>
                     </div>
-                    <div  class="footer__card footer__last">
+                    <div  class="footer__card footer__last col l-3 m-6 c-12">
                         <h3>Information</h3>
                         <ul>
                             <li><i class="fas fa-map-marker-alt"></i><address>Connaugt Road Central Suite 18B, 148 <br>New Yankee</address></li>
@@ -1600,7 +1600,7 @@
             </div>
         </div>
         <div>
-            <div class="grid">  
+            <div class="grid wide">  
                 <div class="footer__bottom">
                     <span>© <a href=""> schön.</a> - All rights Reserved</span>
                     <img src="./assets/images/bank-card.png" alt="">
@@ -1608,6 +1608,9 @@
             </div>
         </div>
     </footer>
+    <div class="btn__back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
     <!--END FOOTER-->
     <!-- Thu vien slick -->
     <script type="text/javascript" src="./assets/slick/slick.js"></script>
@@ -1628,6 +1631,28 @@
         //     autoplaySpeed: 5000,
         // });
     </script>
+    <!-- begin js back to top -->
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if($(window).scrollTop() > 500){
+                    $('.btn__back-to-top').css({
+                        'opacity':'1','pointer-events':"auto"
+                    });
+                } else {
+                    $('.btn__back-to-top').css({
+                        'opacity':'0','pointer-events':"none"
+                    });
+                }
+            });
+            $('.btn__back-to-top').click(function(){
+                $('html').animate({
+                    scrollTop:0
+                },500);
+            })
+        })
+    </script>
+    <!-- end back to top -->
      <!--LINK FILE JS -->
      <script src="./js/header-js.js"></script>
      <!--END LINK JS-->

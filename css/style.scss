@@ -5,11 +5,6 @@
 @import '../scss/base/typography';
 @import '../scss/base/variables';
 @import "../scss/base/button";
-
-@import "../scss/layout/header";
-@import "../scss/layout/header-click";
-@import "../scss/layout/main";
-@import '../scss/layout/footer';
 @import '../scss/components/homepage/slider';
 @import '../scss/components/homepage/banner';
 @import '../scss/components/homepage/product';
@@ -17,3 +12,8 @@
 @import '../scss/components/blog/headerblog';
 @import '../scss/components/blog/main';
 @import '../scss/components/blog/search';
+@import "../scss/layout/header";
+@import "../scss/layout/header-click";
+@import "../scss/layout/main";
+@import '../scss/layout/footer';
+
