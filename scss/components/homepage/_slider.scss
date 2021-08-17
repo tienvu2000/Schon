@@ -76,7 +76,7 @@
             }
             &:hover::after,
             &:hover::before{
-                animation: FadeIn ease 0.8s;
+                animation: FadeIn linear 0.8s;
                 background: #ff6060;
             }
             &::before{

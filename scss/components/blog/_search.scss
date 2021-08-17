@@ -13,7 +13,7 @@
         background-color:#252525;
         // opacity: 0;
         transition: opacity 0.3 ease-in-out;
-        animation: animate 1.5s infinite;
+        // animation: animate 1.5s infinite;
     }
 }
 
@@ -235,16 +235,16 @@
 .isShow{
     display: block;
 }
-@keyframes animate{
-    0%{
-        transform: translateY(0)
-    }
-    100%{
-        transform: translateY(20px)
-    }
-};
-@media screen and (max-width:767px){
-    .search__container{
-        padding: 0 16px;
-    }
-}
+// @keyframes animate{
+//     0%{
+//         transform: translateY(0)
+//     }
+//     100%{
+//         transform: translateY(1px)
+//     }
+// };
+// @media screen and (max-width:767px){
+//     .search__container{
+//         padding: 0 16px;
+//     }
+// }
