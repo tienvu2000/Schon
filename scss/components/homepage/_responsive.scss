@@ -1,3 +1,9 @@
+@include maxW(1440px){
+    .product__seller-links ul {
+        width: 75%;
+        left: 20%;
+    }
+}
 @include maxW(1023px){
     .slider{
         padding: 0;
@@ -42,6 +48,10 @@
     .row.product__seller-row {
         max-height: 370px;
         overflow: hidden;
+    }
+    .product__seller-links ul {
+        width: 75%;
+        left: 20%;
     }
 }
 @include maxW(767px){

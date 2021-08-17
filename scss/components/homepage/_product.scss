@@ -169,6 +169,13 @@
         letter-spacing: 4px;
         font: 700 14px/20px "Source Sans Pro", sans-serif;
     }
+    &__seller-row ul.slick-dots{
+        display: none !important;
+    }
+    &__seller .slick-prev {
+        right: auto;
+        left: -97px;
+    }
     &__best-seller-title{
         h2{
             color: #3a3a3a;
@@ -178,6 +185,7 @@
         }
     }
     &__seller-item{
+        width : calc( 100% / 4);
         background-color: #f8f8f8;
         padding: 10px 5px;
     }
@@ -250,4 +258,54 @@
             font: 18px/18px "Montserrat", sans-serif;
         }
     }
+}
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 5;
+}
+.product__seller-row .slick-prev, .product__seller-row .slick-next {
+    z-index: 3;
+    font-size: 0;
+    line-height: 0;
+    width:45px;
+    height: 45px;
+    color: #bfbfbf;
+    background: none;
+    border-radius: 50%;
+    border: 2px solid #bfbfbf;
+}
+button.slick-prev.slick-arrow{
+    left: -100px;
+}
+button.slick-next.slick-arrow {
+    right: -100px;
+}
+.product__seller-row .slick-next:before{
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    color: #bfbfbf;
+    font-size: 16px;
+    content: "Next";
+    font-family: 'Font Awesome 5 Free';
+}
+.product__seller-row .slick-prev:before{
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    color: #bfbfbf;
+    font-size: 16px;
+    content: "Prev";
+    font-family: 'Font Awesome 5 Free';
 }

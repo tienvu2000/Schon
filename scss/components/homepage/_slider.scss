@@ -100,12 +100,12 @@
         }
     }
 }
-.slick-arrow{
+.slider .slick-arrow{
     display: none !important;
 }
 .slick-dots{
-    display: flex !important;
-    justify-content:center !important;
+    display: flex;
+    justify-content:center;
     padding: 20px;
 }
 .slick-dots li{
@@ -145,4 +145,7 @@
     to{
         width: 50px;
     }
+}
+.slick-slide{
+    width:1200px;
 }

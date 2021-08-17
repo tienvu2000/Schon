@@ -801,17 +801,17 @@ input {
   background: #818182;
 }
 
-.slick-arrow {
+.slider .slick-arrow {
   display: none !important;
 }
 
 .slick-dots {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px;
 }
 
@@ -867,6 +867,10 @@ input {
   to {
     width: 50px;
   }
+}
+
+.slick-slide {
+  width: 1200px;
 }
 
 .banner {
@@ -1245,6 +1249,15 @@ input {
   font: 700 14px/20px "Source Sans Pro", sans-serif;
 }
 
+.product__seller-row ul.slick-dots {
+  display: none !important;
+}
+
+.product__seller .slick-prev {
+  right: auto;
+  left: -97px;
+}
+
 .product__best-seller-title h2 {
   color: #3a3a3a;
   margin: 0 0 2px 0;
@@ -1253,6 +1266,7 @@ input {
 }
 
 .product__seller-item {
+  width: calc( 100% / 4);
   background-color: #f8f8f8;
   padding: 10px 5px;
 }
@@ -1343,6 +1357,70 @@ input {
   font: 18px/18px "Montserrat", sans-serif;
 }
 
+.slick-prev, .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 5;
+}
+
+.product__seller-row .slick-prev, .product__seller-row .slick-next {
+  z-index: 3;
+  font-size: 0;
+  line-height: 0;
+  width: 45px;
+  height: 45px;
+  color: #bfbfbf;
+  background: none;
+  border-radius: 50%;
+  border: 2px solid #bfbfbf;
+}
+
+button.slick-prev.slick-arrow {
+  left: -100px;
+}
+
+button.slick-next.slick-arrow {
+  right: -100px;
+}
+
+.product__seller-row .slick-next:before {
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  color: #bfbfbf;
+  font-size: 16px;
+  content: "Next";
+  font-family: 'Font Awesome 5 Free';
+}
+
+.product__seller-row .slick-prev:before {
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  color: #bfbfbf;
+  font-size: 16px;
+  content: "Prev";
+  font-family: 'Font Awesome 5 Free';
+}
+
+@media screen and (max-width: 1440px) {
+  .product__seller-links ul {
+    width: 75%;
+    left: 20%;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .slider {
     padding: 0;
@@ -1385,6 +1463,10 @@ input {
   .row.product__seller-row {
     max-height: 370px;
     overflow: hidden;
+  }
+  .product__seller-links ul {
+    width: 75%;
+    left: 20%;
   }
 }
 
