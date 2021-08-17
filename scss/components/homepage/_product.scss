@@ -71,6 +71,7 @@
         img{
             width: 100%;
             display: block;
+            object-fit: contain;
         }
     }
     &__item-body{
@@ -218,6 +219,7 @@
         img{
             width: 100%;
             display: block;
+            object-fit:contain;
         }
     }
     &__list-item-title{

@@ -17,7 +17,7 @@
     }
 }
 
-.search{
+.search__blog{
     position: fixed;
     top: 0;
     right: 0;
@@ -26,7 +26,7 @@
     text-align: center;
     background: #f8f8f8;
     display: none;
-    &__container{
+    &-container{
         width: 100%;
         height: 100%;
         display: flex;
@@ -71,7 +71,7 @@
             }
         }
     }
-    &__btn{
+    &-btn{
         position:absolute;
         top: 19px;
         right: 5px;
@@ -87,7 +87,7 @@
             color: #ff6060;
         }
     }
-    &__close{
+    &-close{
         position: fixed;
         left: 50%;
         bottom: 100px;

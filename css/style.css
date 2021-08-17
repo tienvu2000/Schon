@@ -1,3 +1,13 @@
+.isShow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.isHide {
+  display: none;
+}
+
 .grid {
   width: 100%;
   margin: 0 auto;
@@ -1148,6 +1158,8 @@ input {
 .product__item-img img {
   width: 100%;
   display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .product__item-body {
@@ -1327,6 +1339,8 @@ input {
 .product__list-item-img img {
   width: 100%;
   display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .product__list-item-title h3 {
@@ -1822,7 +1836,7 @@ input {
           animation: animate 1.5s infinite;
 }
 
-.search {
+.search__blog {
   position: fixed;
   top: 0;
   right: 0;
@@ -1833,7 +1847,7 @@ input {
   display: none;
 }
 
-.search__container {
+.search__blog-container {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -1844,7 +1858,7 @@ input {
           align-items: center;
 }
 
-.search form {
+.search__blog form {
   position: relative;
   width: 770px;
   height: 60px;
@@ -1852,7 +1866,7 @@ input {
   border-left: 1px solid #bdbdbd;
 }
 
-.search form fieldset {
+.search__blog form fieldset {
   padding: 0;
   margin: 0;
   border: 0;
@@ -1862,7 +1876,7 @@ input {
   display: inline-flex;
 }
 
-.search form fieldset input {
+.search__blog form fieldset input {
   margin: 0;
   border: 0;
   width: 100%;
@@ -1874,7 +1888,7 @@ input {
   font-weight: 300;
 }
 
-.search form fieldset a {
+.search__blog form fieldset a {
   position: absolute;
   font-size: 2.5rem;
   color: #9d9d9d;
@@ -1882,17 +1896,17 @@ input {
   right: 50px;
 }
 
-.search form fieldset a i {
+.search__blog form fieldset a i {
   font-size: 2.3rem;
 }
 
-.search form fieldset a:hover {
+.search__blog form fieldset a:hover {
   color: #ff6060;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-.search__btn {
+.search__blog-btn {
   position: absolute;
   top: 19px;
   right: 5px;
@@ -1905,31 +1919,31 @@ input {
   background: #f8f8f8;
 }
 
-.search__btn:hover {
+.search__blog-btn:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #ff6060;
 }
 
-.search__close {
+.search__blog-close {
   position: fixed;
   left: 50%;
   bottom: 100px;
 }
 
-.search__close a {
+.search__blog-close a {
   font-size: 2.5rem;
   font-weight: 100;
   color: #9d9d9d;
 }
 
-.search__close a:hover {
+.search__blog-close a:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #ff6060;
 }
 
-.search__close a i {
+.search__blog-close a i {
   font-size: 1.6rem;
 }
 
