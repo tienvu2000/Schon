@@ -52,17 +52,17 @@
                 color: #9d9d9d;
                 background:#f8f8f8;
                 padding: 12.5px 22px;
-                font-size: 2.5rem;
+                font-size:25px;
                 font-weight: 300;
             }
             a{
                 position:absolute;
-                font-size: 2.5rem;
+                font-size:25px;
                 color: #9d9d9d;
                 top: 15px;
                 right: 50px;
                 i{
-                    font-size:  2.3rem;
+                    font-size:  23px;
                 }
                 &:hover{
                     color: #ff6060;
@@ -79,7 +79,7 @@
         padding: 0;
         outline: none;
         color: #9d9d9d;
-        font-size: 2.5rem;
+        font-size:25px;
         font-weight: 100;
         background: #f8f8f8;
         &:hover{
@@ -92,7 +92,7 @@
         left: 50%;
         bottom: 100px;
         a{
-            font-size: 2.5rem;
+            font-size:25px;
             font-weight: 100;
             color: #9d9d9d;
             &:hover{
@@ -100,7 +100,7 @@
                 color: #ff6060;
             }
             i{
-                font-size: 1.6rem;
+                font-size: 16px;
             }
         }
     }

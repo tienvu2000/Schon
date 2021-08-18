@@ -1806,6 +1806,58 @@
         <i class="fas fa-arrow-up"></i>
     </div>
     <!--END FOOTER-->
+    <!-- begin modal notify -->
+    <div class="modal__notify isShoww">
+        <div class="modal__notify-container">
+            <div class="modal__notify-btn-close">
+                <a href="#"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="modal__notify-body">
+                <div class="modal__notify-content">
+                    <div class="modal__notify-title">
+                        <h1>JOIN OUR NEWSLETTER</h1>
+                    </div>
+                    <div class="modal__notify-desc">
+                        <p>Subscribe now to get <span>15%</span> off on any product!</p>
+                    </div>
+                    <form action="#" class="modal__notify-form">
+                        <fieldset>
+                            <input type="text" class="modal__notify-form-control" placeholder="Enter your email">
+                            <button type="submit" class="modal__notify-btn">
+                                Subscribe
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+                <form action="#" class="modal__notify-form-checkbox">
+                    <fieldset>
+                        <input type="checkbox" id="modal__notify-checkbox">
+                        <label for="modal__notify-checkbox">Don’t show this popup again</label>
+                    </fieldset>
+                </form>
+                <div class="modal__notify-img">
+                    <img src="./assets/images/img02.png" alt="chair">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal notify -->
+    <!-- js modal notify -->
+    <script>
+        const modalNotify = document.querySelector('.modal__notify');
+        const modalNotifyClose = document.querySelector('.modal__notify-btn-close');
+        const modalNotifyContainer = document.querySelector('.modal__notify-container');
+        function hideNotify(){
+            modalNotify.classList.remove('isShoww');
+        }
+        modalNotifyClose.addEventListener('click', hideNotify);
+
+        modalNotify.addEventListener('click', hideNotify);
+        modalNotifyContainer.addEventListener('click' , function (event){
+        event.stopPropagation()
+        })
+    </script>
+    <!-- end modal notify -->
     <!-- Thu vien slick -->
     <script type="text/javascript" src="./assets/slick/slick.js"></script>
     <script>
@@ -1848,9 +1900,6 @@
                         slidesToScroll: 1
                     }
                     }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
                 ]
             });
     </script>
