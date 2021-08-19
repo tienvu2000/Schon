@@ -1622,7 +1622,7 @@ button.slick-next.slick-arrow {
   }
   .product__content {
     width: 100%;
-    max-height: 640px;
+    max-height: 950px;
     overflow: hidden;
   }
   .product__item-nature {
@@ -1707,6 +1707,14 @@ button.slick-next.slick-arrow {
   .banner__item-sale-off {
     top: 50px;
     right: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .product__content {
+    width: 100%;
+    max-height: 740px;
+    overflow: hidden;
   }
 }
 

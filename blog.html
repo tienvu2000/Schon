@@ -306,45 +306,26 @@
             </div>
         </div>
     </div> -->
-    <!-- js -->
+    <script src="./js/main.js"></script>
     <script>
-        const headerSearch = document.querySelector('.header__blog-search')
-        const search = document.querySelector('.search__blog');
-        const close = document.querySelector('.search__blog-close');
-        const modalSearch = document.querySelector('.modal__search')
-        
+        // Search blog
+    const headerSearch = document.querySelector('a.header__blog-search')
+    const search = document.querySelector('.search__blog');
+    const close = document.querySelector('.search__blog-close');
+    const modalSearch = document.querySelector('.modal__search')
+    
 
-        function isShow (){
-            search.classList.add('isShow');
-        }
-        function isHide (){
-            search.classList.remove('isShow');
-        }
-        headerSearch.addEventListener('click',isShow);
-        close.addEventListener('click',isHide);
-        modalSearch.addEventListener('click',isHide)
+    function isShow (){
+        search.classList.add('isShow');
+    }
+    function isHide (){
+        search.classList.remove('isShow');
+    }
+    headerSearch.addEventListener('click',isShow);
+    close.addEventListener('click',isHide);
+    modalSearch.addEventListener('click',isHide)
 
-
-    </script>
-    <script>
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                if($(window).scrollTop() > 500){
-                    $('.btn__back-to-top').css({
-                        'opacity':'1','pointer-events':"auto"
-                    });
-                } else {
-                    $('.btn__back-to-top').css({
-                        'opacity':'0','pointer-events':"none"
-                    });
-                }
-            });
-            $('.btn__back-to-top').click(function(){
-                $('html').animate({
-                    scrollTop:0
-                },500);
-            })
-        })
+// end search blog  
     </script>
 </body>
 </html>
