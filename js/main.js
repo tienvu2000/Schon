@@ -77,3 +77,36 @@
     });
 
 // <!-- end modal notify -->
+// Reveal Website 
+    window.addEventListener('scroll',reveal);
+
+    function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+        var revealLeft = document.querySelector('.reveal-left');
+        var revealRight = document.querySelector('.reveal-right');
+        for(var i=0; i < reveals.length; i++){
+            var windownHeight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealPoint = 200;
+            if(revealtop < windownHeight - revealPoint){
+                reveals[i].classList.add('isActive');
+            }
+            else {
+                reveals[i].classList.remove('isActive');
+            }
+        }
+        var revealPositionLeft = revealLeft.getBoundingClientRect().top;
+        if(revealPositionLeft < windownHeight - revealPoint){
+            revealLeft.classList.add('isActiveLeft');
+        }
+        else {
+            revealLeft.classList.remove('isActiveLeft');
+        }
+            var revealPositionRight = revealRight.getBoundingClientRect().top;
+            if(revealPositionRight < windownHeight - revealPoint){
+                revealRight.classList.add('isActiveLeft');
+            }
+            else {
+                revealRight.classList.remove('isActiveLeft');
+            }
+    }

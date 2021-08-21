@@ -4,6 +4,21 @@
         left: 20%;
     }
 }
+@include maxW(1399px){
+    .slider__desc p {
+        margin: 0 auto 60px;
+    }
+}
+@include maxW(1300px){
+    .slider__desc p {
+        margin: 0 auto 30px;
+    }
+}
+@include maxW(1150px){
+    .slider__desc p {
+        margin: 0 auto ;
+    }
+}
 @include maxW(1023px){
     .slider{
         padding: 0;

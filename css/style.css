@@ -786,7 +786,7 @@ input {
   top: 8px;
   left: 100%;
   height: 1px;
-  width: 30px;
+  width: 50px;
   position: absolute;
   background: #818182;
 }
@@ -796,7 +796,7 @@ input {
   top: 8px;
   right: 100%;
   height: 1px;
-  width: 30px;
+  width: 50px;
   position: absolute;
   background: #818182;
 }
@@ -871,6 +871,45 @@ input {
 
 .slick-slide {
   width: 1200px;
+}
+
+.reveal {
+  position: relative;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.reveal-left {
+  position: relative;
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.reveal-right {
+  position: relative;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.reveal.isActive {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
+.reveal-left.isActiveLeft, .reveal-right.isActiveLeft {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  opacity: 1;
 }
 
 .banner {
@@ -1586,6 +1625,24 @@ button.slick-next.slick-arrow {
   .product__seller-links ul {
     width: 75%;
     left: 20%;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .slider__desc p {
+    margin: 0 auto 60px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .slider__desc p {
+    margin: 0 auto 30px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .slider__desc p {
+    margin: 0 auto;
   }
 }
 
