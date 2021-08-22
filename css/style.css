@@ -875,8 +875,8 @@ input {
 
 .reveal {
   position: relative;
-  -webkit-transform: translateY(200px);
-          transform: translateY(200px);
+  -webkit-transform: translate(-200px, 200px);
+          transform: translate(-200px, 200px);
   opacity: 0;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -901,8 +901,8 @@ input {
 }
 
 .reveal.isActive {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translate(0px);
+          transform: translate(0px);
   opacity: 1;
 }
 
