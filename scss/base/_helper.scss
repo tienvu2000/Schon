@@ -4,6 +4,12 @@
 .isHide { 
     display: none;
 }
+.product__filter-options.active{
+    opacity: 1;
+}
+.product__row.active{
+    display: flex;
+}
 .grid{
     width: 100%;
     margin: 0 auto;

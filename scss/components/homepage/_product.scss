@@ -18,6 +18,7 @@
         margin: 0 28px 0 0;
         padding: 0 0 0 30px;
         border-left: 1px solid #d8d8d8;
+        opacity: 0.6;
         &:hover{
             cursor: pointer;
             color: #3a3a3a;
@@ -57,6 +58,7 @@
         }
     }
     &__row{
+        display:none;
         justify-content: space-between;
     }
     &__item{

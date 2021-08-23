@@ -8,6 +8,16 @@
   display: none;
 }
 
+.product__filter-options.active {
+  opacity: 1;
+}
+
+.product__row.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .grid {
   width: 100%;
   margin: 0 auto;
@@ -1097,6 +1107,7 @@ input {
   margin: 0 28px 0 0;
   padding: 0 0 0 30px;
   border-left: 1px solid #d8d8d8;
+  opacity: 0.6;
 }
 
 .product__filter-options:hover {
@@ -1151,6 +1162,7 @@ input {
 }
 
 .product__row {
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

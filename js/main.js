@@ -111,3 +111,22 @@
                 revealRight.classList.remove('isActiveLeft');
             }
     }
+// product next page
+const filterOptions = document.querySelectorAll(".product__filter-options");
+const productOptions = document.querySelectorAll(".product__row");
+
+const tabActive = document.querySelector(".product__filter-options.active");
+
+
+filterOptions.forEach((option, index) => {
+  const productOption = productOptions[index];
+
+  option.onclick = function () {
+   document.querySelector(".product__filter-options.active").classList.remove("active");
+   document.querySelector(".product__row.active").classList.remove("active");
+
+
+    this.classList.add("active");
+    productOption.classList.add("active");
+  };
+});
