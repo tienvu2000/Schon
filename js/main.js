@@ -3,7 +3,7 @@
         $(window).scroll(function() {
             if($(window).scrollTop() > 300){
                 $('.btn__back-to-top').css({
-                    'opacity':'1','pointer-events':"auto"
+                    'opacity':'1','pointer-events':"auto",
                 });
             } else {
                 $('.btn__back-to-top').css({
@@ -14,7 +14,7 @@
         $('.btn__back-to-top').click(function(){
             $('html').animate({
                 scrollTop:0
-            },500);
+            },300);
         })
     }
 );
@@ -84,32 +84,34 @@
     function reveal(){
         var reveals = document.querySelectorAll('.reveal');
         var revealLeft = document.querySelector('.reveal-left');
-        var revealRight = document.querySelector('.reveal-right');
+        var revealRight = document.querySelectorAll('.reveal-right');
         for(var i=0; i < reveals.length; i++){
-            var windownHeight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+            var reveal = reveals[i].getBoundingClientRect().top;
             var revealPoint = 200;
-            if(revealtop < windownHeight - revealPoint){
+            if(reveal < windowHeight - revealPoint){
                 reveals[i].classList.add('isActive');
             }
             else {
                 reveals[i].classList.remove('isActive');
             }
         }
-        var revealPositionLeft = revealLeft.getBoundingClientRect().top;
-        if(revealPositionLeft < windownHeight - revealPoint){
-            revealLeft.classList.add('isActiveLeft');
-        }
-        else {
-            revealLeft.classList.remove('isActiveLeft');
-        }
-            var revealPositionRight = revealRight.getBoundingClientRect().top;
-            if(revealPositionRight < windownHeight - revealPoint){
-                revealRight.classList.add('isActiveLeft');
+        // var revealPositionLeft = revealLeft.getBoundingClientRect().top;
+        // if(revealPositionLeft < windownHeight - revealPoint){
+        //     revealLeft.classList.add('isActiveLeft');
+        // }
+        // else {
+        //     revealLeft.classList.remove('isActiveLeft');
+        // }
+        for(var j=0; j < revealRight.length; j++){
+            var revealScrollRight = revealRight[j].getBoundingClientRect().top;
+            if(revealScrollRight < windowHeight - revealPoint){
+                revealRight[j].classList.add('isActiveLeft');
             }
             else {
-                revealRight.classList.remove('isActiveLeft');
+                revealRight[j].classList.remove('isActiveLeft');
             }
+        }
     }
 // product next page
 const filterOptions = document.querySelectorAll(".product__filter-options");
