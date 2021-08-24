@@ -1,3 +1,33 @@
+.loader-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.loader-page img {
+  width: 100px;
+  height: 100px;
+}
+
+.loader-page.fade-out {
+  top: -110%;
+  opacity: 0;
+}
+
 .isShow {
   display: -webkit-box;
   display: -ms-flexbox;

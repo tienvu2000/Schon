@@ -306,9 +306,14 @@
             </div>
         </div>
     </div> -->
+    <!-- icon load page start -->
+    <div class="loader-page loader-blog">
+        <img src="http://htmlbeans.com/html/schon/images/svg/rings.svg" alt="">
+    </div>
+    <!-- icon load page end -->
     <script src="./js/main.js"></script>
     <script>
-        // Search blog
+    // Search blog
     const headerSearch = document.querySelector('a.header__blog-search')
     const search = document.querySelector('.search__blog');
     const close = document.querySelector('.search__blog-close');
@@ -326,6 +331,17 @@
     modalSearch.addEventListener('click',isHide)
 
 // end search blog  
+// load blog page
+function loader(){
+    document.querySelector('.loader-blog').classList.add('fade-out');
+  }
+  
+  function fadeOut(){
+    setInterval(loader, 1000);
+  }
+  
+  window.onload = fadeOut;
+// end load blog page
     </script>
 </body>
 </html>
