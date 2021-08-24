@@ -33,8 +33,8 @@
     $('.product__seller-row').slick({
         dots: true,
         autoplay: true,
-        autoplaySpeed: 1200,
-        speed: 300,
+        autoplaySpeed: 1500,
+        speed: 400,
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
@@ -130,3 +130,14 @@ filterOptions.forEach((option, index) => {
     productOption.classList.add("active");
   };
 });
+
+// load page
+function loader(){
+    document.querySelector('.loader-homepage').classList.add('fade-out');
+  }
+  
+  function fadeOut(){
+    setInterval(loader, 1000);
+  }
+  
+  window.onload = fadeOut;
