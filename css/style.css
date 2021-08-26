@@ -3327,7 +3327,8 @@ button.slick-next.slick-arrow {
   opacity: 0;
   visibility: hidden;
   background-color: #f8f8f8;
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
