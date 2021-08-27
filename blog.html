@@ -240,10 +240,10 @@
     <!-- begin modal search -->
     <div class="search__blog">
         <div class="search__blog-container">
-            <form action="#">
+            <form action="#" method="get" target="_self" id="search__form">
                 <fieldset>
-                    <input type="text" placeholder="Search...">
-                      <a href="#"><i class="fas fa-microphone"></i></a>
+                    <input class="search__form-input" type="text" placeholder="Search...">
+                    <a href="#" class="search__blog-micro-btn"><i class="fas fa-microphone micro"></i></a>
                     <button class="fas fa-search search__blog-btn modal__search" type="submit"></button>
                 </fieldset> 
             </form>
@@ -312,14 +312,15 @@
     </div>
     <!-- icon load page end -->
     <script src="./js/main.js"></script>
+    <script src="./js/voice-search.js"></script>
     <script>
     // Search blog
-    const headerSearch = document.querySelector('a.header__blog-search')
-    const search = document.querySelector('.search__blog');
-    const close = document.querySelector('.search__blog-close');
-    const modalSearch = document.querySelector('.modal__search')
-    
-
+    const $$ = document.querySelectorAll.bind(document);
+    const $ = document.querySelector.bind(document);
+    const headerSearch = $('.header__blog-search')
+    const search = $('.search__blog');
+    const isClose = $('.search__blog-close');
+    const modalSearch = $('.modal__search')
     function isShow (){
         search.classList.add('isShow');
     }
@@ -327,15 +328,14 @@
         search.classList.remove('isShow');
     }
     headerSearch.addEventListener('click',isShow);
-    close.addEventListener('click',isHide);
+    isClose.addEventListener('click',isHide);
     modalSearch.addEventListener('click',isHide)
 
 // end search blog  
 // load blog page
 function loader(){
-    document.querySelector('.loader-blog').classList.add('fade-out');
+    $('.loader-blog').classList.add('fade-out');
   }
-  
   function fadeOut(){
     setInterval(loader, 1000);
   }
@@ -343,5 +343,6 @@ function loader(){
   window.onload = fadeOut;
 // end load blog page
     </script>
+    
 </body>
 </html>

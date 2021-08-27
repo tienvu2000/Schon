@@ -8,8 +8,11 @@
 
                 // $(this).parents("body").toggleClass("is-fixed");
             });
-
-            $(".fa-times").click(function() {
+            $(".search__homepage-icon-search").click(function() {
+                $(this).parents(".header") 
+                $(".search").removeClass("open")
+            });
+            $(".search__homepage-icon-close").click(function() {
                 $(this).parents(".header") 
                 $(".search").removeClass("open")
             });
