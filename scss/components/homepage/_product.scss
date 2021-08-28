@@ -137,9 +137,10 @@
         ul{
             display: flex;
             justify-content:center;
+            align-items: center;
             position:absolute;
             bottom: 70%;
-            width: 99%;
+            width: 92%;
             border: 1px solid #eee;
             li{
                 a{
@@ -155,7 +156,6 @@
         }
     }
     &__link{
-        margin-left: -43px;
         i{
             margin-right:10px;
         }
@@ -204,9 +204,6 @@
             width: 61%;
             left: 25%;
         }
-    }
-    &__link-first{
-        margin-left:-70px;
     }
     &__list{
         padding: 70px 0 65px;

@@ -32,8 +32,8 @@
 {/* //  slick best seller */}
     $('.product__seller-row').slick({
         dots: true,
-        autoplay: true,
-        autoplaySpeed: 1500,
+        // autoplay: true,
+        // autoplaySpeed: 1500,
         speed: 400,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -57,7 +57,7 @@
             {
             breakpoint: 480,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1
             }
         }

@@ -1292,9 +1292,12 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   bottom: 70%;
-  width: 99%;
+  width: 92%;
   border: 1px solid #eee;
 }
 
@@ -1311,10 +1314,6 @@ input {
   color: #ff6060;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-}
-
-.product__link {
-  margin-left: -43px;
 }
 
 .product__link i {
@@ -1369,10 +1368,6 @@ input {
 .product__seller-links ul {
   width: 61%;
   left: 25%;
-}
-
-.product__link-first {
-  margin-left: -70px;
 }
 
 .product__list {
@@ -1669,6 +1664,9 @@ button.slick-next.slick-arrow {
 }
 
 @media screen and (max-width: 1440px) {
+  .product__item-links ul {
+    width: 89%;
+  }
   .product__seller-links ul {
     width: 75%;
     left: 20%;
@@ -1682,6 +1680,12 @@ button.slick-next.slick-arrow {
 }
 
 @media screen and (max-width: 1300px) {
+  .product__item-links ul {
+    width: 89.5%;
+  }
+  .product__item-links ul span {
+    display: none;
+  }
   .slider__desc p {
     margin: 0 auto 30px;
   }
@@ -1726,19 +1730,20 @@ button.slick-next.slick-arrow {
   }
   .product__content {
     width: 100%;
-    max-height: 950px;
-    overflow: hidden;
   }
   .product__item-nature {
     left: 10px;
   }
-  .row.product__seller-row {
-    max-height: 370px;
-    overflow: hidden;
+  .product__item-links ul {
+    width: 49.5%;
+    left: 25%;
   }
   .product__seller-links ul {
     width: 75%;
     left: 20%;
+  }
+  .product__seller-links ul span {
+    display: none;
   }
 }
 
@@ -1808,17 +1813,20 @@ button.slick-next.slick-arrow {
   .product__filter-options h2 {
     font-size: 11px;
   }
+  .product__seller-links ul {
+    width: 66%;
+    left: 20%;
+  }
   .banner__item-sale-off {
     top: 50px;
     right: 20px;
   }
 }
 
-@media screen and (max-width: 350px) {
-  .product__content {
-    width: 100%;
-    max-height: 740px;
-    overflow: hidden;
+@media screen and (max-width: 600px) {
+  .product__seller-links ul {
+    width: 59%;
+    left: 20%;
   }
 }
 
