@@ -28,6 +28,11 @@
         margin: 0 auto ;
     }
 }
+@include maxW(1400px){
+    .product__seller-row .btn-slick {
+        display : none !important;
+    }
+}
 @include maxW(1023px){
     .slider{
         padding: 0;

@@ -1,7 +1,21 @@
-const _$ = document.querySelector.bind(document)
-const _$$ = document.querySelectorAll.bind(document)
 
-
+// const headerSearch = $('.header__blog-search')
+// const search = $('.search__blog');
+// const isClose = $('.search__blog-close');
+// const modalSearch = $('.modal__search')
+// function isShow (){
+//     search.classList.add('isShow');
+// }
+// function isHide (){
+//     search.classList.remove('isShow');
+// }
+// headerSearch.addEventListener('click',isShow);
+// isClose.addEventListener('click',isHide);
+// modalSearch.addEventListener('click',isHide)
+const showMenu = document.querySelector('.bar-menu')
+// function isShowMenu (){
+//   showMenu.classList.add('isShow');
+// }
 // // click next/prev btn
 
 // const nextBtn = _$('.next-btn')
@@ -33,7 +47,7 @@ const modalNotify = document.querySelector('.modal__notify');
 const modalNotifyClose = document.querySelector('.modal__notify-btn-close');
 const modalNotifyContainer = document.querySelector('.modal__notify-container');
 function hideNotify(){
-    modalNotify.classList.remove('isShoww');
+    modalNotify.classList.remove('isShowed');
 }
 modalNotifyClose.addEventListener('click', hideNotify);
 
@@ -43,41 +57,14 @@ event.stopPropagation()
 });
 
 // <!-- end modal notify -->
-// Reveal Website 
-window.addEventListener('scroll',reveal);
-
-function reveal(){
-    var reveals = document.querySelectorAll('.reveal');
-    var revealLeft = document.querySelector('.reveal-left');
-    var revealRight = document.querySelectorAll('.reveal-right');
-    for(var i=0; i < reveals.length; i++){
-        var windowHeight = window.innerHeight;
-        var reveal = reveals[i].getBoundingClientRect().top;
-        var revealPoint = 100;
-        if(reveal < windowHeight - revealPoint){
-            reveals[i].classList.add('isActive');
-        }
-        else {
-            reveals[i].classList.remove('isActive');
-        }
-    }
-        // var revealPositionLeft = revealLeft.getBoundingClientRect().top;
-        // if(revealPositionLeft < windownHeight - revealPoint){
-        //     revealLeft.classList.add('isActiveLeft');
-        // }
-        // else {
-        //     revealLeft.classList.remove('isActiveLeft');
-        // }
-    for(var j=0; j < revealRight.length; j++){
-        var revealScrollRight = revealRight[j].getBoundingClientRect().top;
-        if(revealScrollRight < windowHeight - revealPoint){
-            revealRight[j].classList.add('isActiveLeft');
-        }
-        else {
-            revealRight[j].classList.remove('isActiveLeft');
-        }
-    }
-}
+// // Reveal Website 
+ScrollReveal({
+    distance: '15px',
+    duration: 2500,
+    delay: 250,
+})
+ScrollReveal().reveal('.banner , .product , .product__best-seller, .product__list', {delay : 200})
+// end Reveal 
 // product next page
 const filterOptions = document.querySelectorAll(".product__filter-options");
 const productOptions = document.querySelectorAll(".product__row");
