@@ -28,7 +28,7 @@
     opacity:0;
 }
 .isShow {
-    display: flex;
+    display: flex !important;
 }
 .isHide { 
     display: none;

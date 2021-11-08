@@ -30,9 +30,9 @@ $('.slider').slick({
 );
 // slick product list 
 $('.product__slick').slick({
-    // dots: false,
     // autoplay: true,
-    autoplaySpeed: 1500,
+    // autoplaySpeed: 1500,
+    dots: false,
     speed: 400,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -70,8 +70,8 @@ $('.product__slick').slick({
 /* //  slick best seller */
 $('.product__seller-row').slick({
     dots: false,
-    autoplay: true,
-    autoplaySpeed: 1500,
+    // autoplay: true,
+    // autoplaySpeed: 1500,
     speed: 400,
     slidesToShow: 4,
     slidesToScroll: 1,

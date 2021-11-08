@@ -1,53 +1,84 @@
 
-// const headerSearch = $('.header__blog-search')
-// const search = $('.search__blog');
-// const isClose = $('.search__blog-close');
-// const modalSearch = $('.modal__search')
-// function isShow (){
-//     search.classList.add('isShow');
-// }
-// function isHide (){
-//     search.classList.remove('isShow');
-// }
-// headerSearch.addEventListener('click',isShow);
-// isClose.addEventListener('click',isHide);
-// modalSearch.addEventListener('click',isHide)
-const showMenu = document.querySelector('.bar-menu')
-// function isShowMenu (){
-//   showMenu.classList.add('isShow');
-// }
-// // click next/prev btn
+// Show Search
+const search = document.querySelector('.search');
+const btnSearch = document.querySelector('.search-click');
+const btnClose = document.querySelector('.search-close');
+const modalSearch = document.querySelector('.modal__search');
+function isShow(){
+  search.classList.add('isShow');
+}
+function isHide(){
+  search.classList.remove('isShow');
+}
+btnSearch.addEventListener('click',isShow);
+btnClose.addEventListener('click',isHide);
+modalSearch.addEventListener('click', isHide);
+// hide search
+// Show modal header liked/ cart
+const modalBtn = document.querySelectorAll('.modal__header-click');
+const modalHeaderShow = document.querySelectorAll('.modal__header-show');
+const modalHide = document.querySelectorAll('.modal__hide');
 
-// const nextBtn = _$('.next-btn')
-// const prevBtn = _$('.next-btn')
-// listItem = _$$('.product__item')
-// const index = 0
-// listItem.forEach((item) => {
-//     const itemIndex = item.getAttribute('data-index')
-//     if (Number(itemIndex) === this.index) {
-//       item.classList.add('active');
-//     }
-//   });
-// nextBtn.onclick = function(){
-//     if(itemIndex){
-//         index++;
-//     }
-// }
-// prevBtn.onclick = function(){
-//     if(itemIndex){
-//         index--;
-//     }
-// }
+modalBtn.forEach((item , idx) => {
+  item.onclick = function () {
+    // function isHideModal() {
+    //   modalHeaderShow[idx].classList.remove('isShow')
+    // }
+    // if (modalHeaderShow[idx].classList.contains('isShow')) {
+    //   modalHide[idx].addEventListener('click', isHideModal)
+    // } else {
+    //   modalHeaderShow[idx].classList.add('isShow')
+    // }
+    modalHeaderShow[idx].classList.toggle('isShow')
+  }
+})  
 
-// //  end click next/prev btn
+// // WRONG
+// const modalLikedClick = document.querySelector('.react__love');
+// const modalLiked = document.querySelector('.liked');
+// const modalCart = document.querySelector('.cart-list');
+// const modalLikedBtn = document.querySelector('.liked__footer-btn');
+// const modalCartBtn = document.querySelector('.cart__btn-right')
+// function modalLikedShow(){
+//   modalLiked.classList.add('isShow')
+// }
+// function modalLikedHide(){
+//   modalLiked.classList.remove('isShow')
+// }
+// function modalCartShow(){
+//   modalCart.classList.add('isShow')
+// }
+// function modalCartHide(){
+//   modalCart.classList.remove('isShow')
+// }
+// modalLikedClick.addEventListener('click', modalLikedShow);
+// modalLikedBtn.addEventListener('click',modalLikedHide)
 
+// end modal header liked / add
+// show from login
+const loginForm = document.querySelector('.login');
+const btnLogin = document.querySelector('.login-click');
+const btnCloseLogin = document.querySelector('.login__close');
+const modalLogin = document.querySelector('.login__container')
+function isShowLogin(){
+  loginForm.classList.add('isShow');
+}
+function isHideLogin(){
+  loginForm.classList.remove('isShow');
+}
+btnLogin.addEventListener('click',isShowLogin);
+btnCloseLogin.addEventListener('click',isHideLogin);
+modalLogin.addEventListener('click',function(e){
+  e.stopPropagation();
+});
+// end show form
 
 // <!-- js modal notify -->
 const modalNotify = document.querySelector('.modal__notify');
 const modalNotifyClose = document.querySelector('.modal__notify-btn-close');
 const modalNotifyContainer = document.querySelector('.modal__notify-container');
 function hideNotify(){
-    modalNotify.classList.remove('isShowed');
+    modalNotify.classList.remove('isShow');
 }
 modalNotifyClose.addEventListener('click', hideNotify);
 
@@ -57,6 +88,13 @@ event.stopPropagation()
 });
 
 // <!-- end modal notify -->
+// begin responsive tab menu js
+const showNav = document.querySelector('.header__nav');
+const btnBar = document.querySelector('.bar-menu')
+btnBar.onclick = function () {
+  showNav.classList.toggle('block')
+}
+// end responsive tab menu js
 // // Reveal Website 
 ScrollReveal({
     distance: '15px',

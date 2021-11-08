@@ -115,7 +115,7 @@
     height: 16px;
     border: 2px solid #d2d2d2;
 }
-.slick-dots li button{
+.slider .slick-dots li button{
     font-size: 0;
     line-height: 0;
     display: block;
@@ -128,7 +128,7 @@
     outline: none;
     background: transparent;
 }
-.slick-active{
+.slider .slick-active{
     border-color: #aeaeae;
 }
 

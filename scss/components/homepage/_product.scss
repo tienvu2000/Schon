@@ -205,9 +205,9 @@
     &__seller-links{
 
         ul{
-            transform: translateX(-40px);
             width: 74%;
-            left: 25%;
+            left: 0;
+            transform : translateX(40px);
         }
     }
     &__seller-link-item{
@@ -295,6 +295,9 @@
     background-color: $hover-red;
     border-color: $hover-red;
     color: #fff;
+}
+.product__slick ul.slick-dots {
+    display: none !important;
 }
 .product__seller-row .btn-slick {
     position: absolute;
