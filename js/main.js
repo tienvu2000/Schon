@@ -34,7 +34,7 @@ modalBtn.forEach((item , idx) => {
 })  
 
 // // WRONG
-const modalLikedClick = document.querySelector('.react__love');
+// const modalLikedClick = document.querySelector('.react__love');
 // const modalLiked = document.querySelector('.liked');
 // const modalCart = document.querySelector('.cart-list');
 // const modalLikedBtn = document.querySelector('.liked__footer-btn');
